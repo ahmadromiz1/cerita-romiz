@@ -1,0 +1,234 @@
+<!-- boosys-landing/blog/api-fastapi.html -->
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REST API Playground - Boosys Code</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4712/4712009.png" type="image/png">
+
+</head>
+
+<body>
+<div class="container">
+    <h1>REST API Playground</h1>
+    <p>Belajar dan uji coba konsep REST API menggunakan endpoint publik seperti <code>https://httpbin.org</code>.</p>
+
+
+    <h2>Penjelasan HTTP Method</h2>
+    <ul>
+        <li><strong>GET:</strong> Mengambil data (tidak perlu body).</li>
+        <li><strong>POST:</strong> Kirim data baru.</li>
+        <li><strong>PUT:</strong> Ganti seluruh data.</li>
+        <li><strong>PATCH:</strong> Update sebagian data.</li>
+        <li><strong>DELETE:</strong> Hapus data berdasarkan ID/nama.</li>
+    </ul>
+
+    <section style="margin-top: 2em; background: #1a1a1a; border-radius: 10px; padding: 20px;">
+        <h3>🧪 Contoh Endpoint Uji Coba:</h3>
+        <ul>
+            <li><code>https://httpbin.org/get</code> ← GET</li>
+            <li><code>https://httpbin.org/post</code> ← POST</li>
+            <li><code>https://httpbin.org/put</code> ← PUT</li>
+            <li><code>https://httpbin.org/patch</code> ← PATCH</li>
+            <li><code>https://httpbin.org/delete</code> ← DELETE</li>
+        </ul>
+        <p style="margin-top: 1em; font-size: 0.95em;">
+            📝 <em>Catatan:</em> Setiap metode menghasilkan response yang berbeda.
+        </p>
+    </section>
+
+    <hr />
+
+    <label for="username"><strong>Nama Pengguna:</strong></label>
+    <input type="text" id="username" class="form-control" placeholder="mis. andi" onchange="loadHistory()" />
+
+    <form id="api-form">
+        <label for="api-method"><strong>Metode HTTP:</strong></label>
+        <select id="api-method" class="form-select" onchange="updateTutorial(); togglePayload()">
+            <option value="GET">GET</option>
+            <option value="POST">POST</option>
+            <option value="PUT">PUT</option>
+            <option value="PATCH">PATCH</option>
+            <option value="DELETE">DELETE</option>
+        </select><br>
+
+        <label for="api-endpoint"><strong>Endpoint URL:</strong></label>
+        <input type="text" id="api-endpoint" value="https://httpbin.org/post" class="form-control" required /><br>
+
+        <div id="payload-section">
+            <label for="api-payload"><strong>Payload (JSON):</strong></label>
+            <textarea id="api-payload" rows="8" class="form-control">{
+  "nama": "Boosys",
+  "umur": 30
+}</textarea>
+
+            <div class="json-tips">
+                📘 <strong>Tips Format JSON:</strong><br>
+                - Gunakan format: <code>{"kunci": "nilai"}</code><br>
+                - Contoh: <code>{"nama": "Boosys", "umur": 30}</code><br>
+                - Kunci & teks wajib pakai tanda kutip ganda (<code>"</code>)
+            </div>
+
+            <div class="json-tips mt-3" id="method-tutorial">
+                📘 <strong>Tutorial:</strong><br>
+                Pilih metode untuk melihat cara penggunaannya.
+            </div>
+        </div>
+
+        <br>
+        <button type="submit">Kirim & Tes API</button>
+    </form>
+
+    <h2>Status Response:</h2>
+    <div id="status"></div>
+
+    <h2>Hasil Response:</h2>
+    <pre id="api-result"></pre>
+
+    <h2>Riwayat Request (max 10):</h2>
+    <button onclick="clearHistory()" style="margin-top: 1rem;">🗑️ Hapus Riwayat</button>
+    <ul id="history"></ul>
+
+    <a href="../index.html" class="btn-back"><i class="bi bi-arrow-left"></i> Kembali ke Halaman Utama</a>
+</div>
+
+<script>
+    function updateTutorial() {
+        const method = document.getElementById("api-method").value;
+        const tutorial = document.getElementById("method-tutorial");
+        let content = "";
+
+        switch (method) {
+            case "GET":
+                content = "GET digunakan untuk mengambil semua data. Tidak perlu payload.";
+                break;
+            case "POST":
+                content = `POST digunakan untuk mengirim data baru. Contoh payload:<pre>{\n  \"nama\": \"Boosys\",\n  \"umur\": 30\n}</pre>`;
+                break;
+            case "PUT":
+                content = `PUT digunakan untuk mengganti data berdasarkan nama. Contoh:<pre>{\n  \"nama\": \"Boosys\",\n  \"umur\": 35\n}</pre>`;
+                break;
+            case "PATCH":
+                content = `PATCH digunakan untuk memperbarui sebagian data. Contoh:<pre>{\n  \"umur\": 31\n}</pre>`;
+                break;
+            case "DELETE":
+                content = `DELETE digunakan untuk menghapus berdasarkan nama atau ID. Contoh:<pre>{\n  \"nama\": \"Boosys\"\n}</pre>`;
+                break;
+        }
+
+        tutorial.innerHTML = `📘 <strong>Tutorial:</strong><br>${content}`;
+    }
+
+    function togglePayload() {
+        const method = document.getElementById("api-method").value;
+        const payloadSection = document.getElementById("payload-section");
+        payloadSection.style.display = ["POST", "PUT", "PATCH", "DELETE"].includes(method) ? "block" : "none";
+    }
+
+    const form = document.getElementById("api-form");
+    const result = document.getElementById("api-result");
+    const status = document.getElementById("status");
+    const historyList = document.getElementById("history");
+
+    function getUsername() {
+        return document.getElementById("username").value.trim().toLowerCase() || "guest";
+    }
+
+    function getStorageKey() {
+        return `apiHistory_${getUsername()}`;
+    }
+
+    function loadHistory() {
+        const key = getStorageKey();
+        const history = JSON.parse(localStorage.getItem(key) || "[]");
+        historyList.innerHTML = "";
+        history.slice(-10).reverse().forEach(item => {
+            const li = document.createElement("li");
+            li.textContent = `${item.method} - ${item.url}`;
+            historyList.appendChild(li);
+        });
+    }
+
+    function saveToHistory(method, url) {
+        const key = getStorageKey();
+        let history = JSON.parse(localStorage.getItem(key) || "[]");
+        history.push({ method, url, time: new Date().toISOString() });
+        localStorage.setItem(key, JSON.stringify(history.slice(-10)));
+    }
+
+    function clearHistory() {
+        const key = getStorageKey();
+        localStorage.removeItem(key);
+        loadHistory();
+    }
+
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const url = document.getElementById("api-endpoint").value;
+        const method = document.getElementById("api-method").value;
+        let payload = {};
+
+        if (["POST", "PUT", "PATCH", "DELETE"].includes(method)) {
+            try {
+                payload = JSON.parse(document.getElementById("api-payload").value);
+            } catch (err) {
+                alert("⚠️ Format JSON tidak valid. Harap periksa kembali.");
+                return;
+            }
+        }
+
+        try {
+            const options = {
+                method,
+                headers: { 'Content-Type': 'application/json' }
+            };
+
+            if (["POST", "PUT", "PATCH", "DELETE"].includes(method)) {
+                options.body = JSON.stringify(payload);
+            }
+
+            const response = await fetch(url, options);
+            const data = await response.json();
+
+            status.innerHTML = `<strong>Status:</strong> <span class="${response.ok ? 'status-200' : 'status-error'}">${response.status} ${response.statusText}</span>`;
+            result.textContent = JSON.stringify(data, null, 2);
+
+            saveToHistory(method, url);
+            loadHistory();
+
+        } catch (err) {
+            status.innerHTML = `<strong>Status:</strong> <span class="status-error">Error saat request</span>`;
+            result.textContent = `Error: ${err.message}`;
+        }
+    });
+
+    window.onload = () => {
+        togglePayload();
+        updateTutorial();
+        loadHistory();
+    };
+</script>
+<footer class="mt-5 pt-4 border-top text-white" style="background-color: #111;">
+    <div class="container">
+        <h5 class="text-warning">🚀 Penutup dari Playground REST API</h5>
+        <p class="mb-1">✍️ Artikel ini ditulis oleh <strong>Rz</strong>, sambil ngetes endpoint dan sesekali typo di JSON.</p>
+        <p class="mb-1">🧃 Ditemani terminal, `httpbin`, dan playlist lo-fi yang muter tanpa henti dari siang sampai subuh.</p>
+        <p class="mb-1">🔁 Belajar HTTP method itu simpel, tapi praktiknya bisa bikin kita manggil `DELETE` ke relationship toxic juga.</p>
+       
+    </div>
+    <div class="text-center my-5">
+        <a href="../index.html" class="btn btn-outline-light btn-lg">
+            <i class="bi bi-arrow-left"></i> Kembali ke Halaman Utama
+        </a>
+    </div>
+</footer>
+
+</body>
+
+</html>

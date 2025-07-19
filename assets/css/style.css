@@ -1,0 +1,196 @@
+/* === Global style === */
+body {
+    background-color: #0f0f0f;
+    color: #f0c040;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h5,
+.section-title {
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.section-title {
+    border-bottom: 2px solid #f0c040;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+/* Paragraphs & Lists */
+p,
+ul,
+li {
+    color: #dddddd;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Buttons */
+.btn-gold,
+button {
+    background-color: #f0c040;
+    color: #111;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-gold:hover,
+button:hover {
+    background-color: #dba826;
+    transform: scale(1.03);
+}
+
+/* Links */
+a {
+    color: #f0c040;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #dba826;
+}
+
+/* Inputs & Textarea */
+textarea,
+input,
+select {
+    background-color: #1a1a1a;
+    color: #f8f8f8;
+    border: 1px solid #444;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    width: 100%;
+    margin-top: 0.5rem;
+    font-family: 'Inter', monospace;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus,
+input:focus {
+    border-color: #f0c040;
+    outline: none;
+}
+
+/* Code block */
+code {
+    background-color: #222;
+    padding: 0.25em 0.5em;
+    border-radius: 4px;
+    color: #f0c040;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95em;
+}
+
+pre {
+    background: #222;
+    color: #eee;
+    padding: 1em;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+/* Terminal */
+.terminal {
+    background-color: #000;
+    color: #0f0;
+    font-family: monospace;
+    padding: 1rem;
+    height: 400px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    border-radius: 8px;
+    border: 1px solid #444;
+}
+
+/* Misc elements */
+hr {
+    border-top: 1px dashed #f0c040;
+    margin: 2rem 0;
+}
+
+.status-200 {
+    color: #32cd32;
+}
+
+.status-error {
+    color: #ff4c4c;
+}
+
+ul#history li {
+    font-size: 0.9em;
+    margin-bottom: 6px;
+    color: #ccc;
+}
+
+/* Back button */
+.btn-back {
+    margin-top: 2rem;
+    display: inline-block;
+    background: transparent;
+    color: #f0c040;
+    border: 1px solid #f0c040;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+    background: #f0c040;
+    color: #111;
+}
+
+/* Bootstrap overrides */
+.bg-dark {
+    background-color: #1e1e1e !important;
+}
+
+.rounded-3 {
+    border-radius: 1rem !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Project cards */
+.project-card {
+    transition: all 0.3s ease;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: #1a1a1a;
+    padding: 1rem;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(255, 193, 7, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    p,
+    li {
+        font-size: 0.95rem;
+    }
+
+    .project-card {
+        padding: 1rem;
+    }
+}
