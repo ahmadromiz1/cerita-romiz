@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Romiz - Profil Profesional</title>
+    <title>romiz - Profil Profesional</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
-<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4712/4712009.png" type="image/png">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4712/4712009.png" type="image/png">
+    
+
+
 
 </head>
 
@@ -17,105 +22,236 @@
 
         <!-- Hero Section -->
         <section class="text-center mb-5">
-            <img src="assets/img/profil.png" alt="Foto Profil Romiz Code - Data Analyst & Developer"
+            <img src="assets/img/profil.png" alt="Foto Profil romiz Code - Data Analyst & Developer"
                 class="rounded-circle mb-3 img-fluid shadow" width="150" loading="lazy" />
             <h1 class="text-warning">Romiz</h1>
-            <p class="lead text-light">Data Analyst | REST API & Automation | AI Developer</p>
+            <span id="typed-output" class="lead text-light"></span>
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script>
+                new Typed('#typed-output', {
+                    strings: ['Data Analyst', 'REST API Developer', 'AI Enthusiast'],
+                    typeSpeed: 60,
+                    backSpeed: 40,
+                    loop: true
+                });
+            </script>
+
             <p class="lead text-light">🚀 Automation | 🤖 AI | 🧠 Data Enthusiast</p>
             <span class="badge bg-warning text-dark">Open for Collaboration</span>
         </section>
 
         <!-- Tentang Saya -->
         <section class="mb-5">
-            <h2 class="section-title">Tentang Saya</h2>
-            <p>
-                Saya adalah profesional di bidang data dan teknologi yang berfokus pada pengembangan pipeline ETL, REST
-                API,
-                otomasi proses bisnis, dan solusi AI. Berpengalaman merancang sistem efisien dan scalable untuk
-                kebutuhan operasional perusahaan modern.
-            </p>
+            <div class="container">
+                <h2 class="section-title">Tentang Saya</h2>
+                <p class="lead text-justify" style="text-align: justify;">
+                    Saya adalah profesional di bidang data dan teknologi yang berfokus pada pengembangan pipeline ETL, REST API,
+                    otomasi proses bisnis, dan solusi AI. Berpengalaman dalam merancang sistem yang efisien dan scalable untuk
+                    menunjang kebutuhan operasional perusahaan modern.
+                </p>
+                <p class="text-justify" style="text-align: justify;">
+                    Keahlian saya mencakup transformasi data, integrasi sistem backend, serta penerapan model AI untuk analitik
+                    dan otomasi. Saya senang membangun solusi yang berdampak langsung pada efisiensi kerja dan pengambilan
+                    keputusan berbasis data.
+                </p>
+            </div>
         </section>
-
+        
         <!-- Skills & Tools -->
         <section class="mb-5">
-            <h2 class="section-title">Skills & Tools</h2>
-            <ul>
-                <li><strong>Programming Languages:</strong> Python, PHP, JavaScript</li>
-                <li><strong>Frameworks:</strong> FastAPI, Flask, Laravel (basic)</li>
-                <li><strong>Frontend & UI:</strong> Bootstrap, Tailwind CSS</li>
-                <li><strong>DevOps & Tools:</strong> Linux, Docker, Git, GitHub, VS Code</li>
-                <li><strong>Automation & Testing:</strong> n8n, Playwright, Selenium</li>
-                <li><strong>AI & LLM Development:</strong> OpenAI API, LangChain, DeepSeek, PyScript</li>
-                <li><strong>Technical Skills:</strong> Windows OS, Networking, Troubleshooting</li>
-                <li><strong>Data Tools:</strong> Looker Studio, Tableau</li>
-                <li><strong>Office Tools:</strong> Word, Excel, PowerPoint, Outlook, Teams</li>
-            </ul>
+            <h2 class="section-title text-warning text-center mb-4">Skills & Tools</h2>
+        
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+        
+                <!-- Skill Card Template -->
+                <div class="col" data-aos="fade-up">
+                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-warning">
+                        <h5 class="text-light mb-2"><i class="bi bi-code-slash me-2"></i>Programming Languages</h5>
+                        <div>
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">PHP</span>
+                            <span class="skill-badge">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col" data-aos="fade-up" data-aos-delay="50">
+                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-info">
+                        <h5 class="text-light mb-2"><i class="bi bi-box me-2"></i>Frameworks</h5>
+                        <div>
+                            <span class="skill-badge bg-info text-dark">FastAPI</span>
+                            <span class="skill-badge bg-info text-dark">Flask</span>
+                            <span class="skill-badge bg-info text-dark">CodeIgniter</span>
+                            <span class="skill-badge bg-info text-dark">Laravel (basic)</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-primary">
+                        <h5 class="text-light mb-2"><i class="bi bi-palette me-2"></i>Frontend & UI</h5>
+                        <div>
+                            <span class="skill-badge bg-primary">Bootstrap</span>
+                            <span class="skill-badge bg-primary">Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col" data-aos="fade-up" data-aos-delay="150">
+                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-light">
+                        <h5 class="text-light mb-2"><i class="bi bi-tools me-2"></i>DevOps & Tools</h5>
+                        <div>
+                            <span class="skill-badge">Linux</span>
+                            <span class="skill-badge">Docker</span>
+                            <span class="skill-badge">Git</span>
+                            <span class="skill-badge">GitHub</span>
+                            <span class="skill-badge">VS Code</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-warning">
+                        <h5 class="text-light mb-2"><i class="bi bi-robot me-2"></i>Automation & Testing</h5>
+                        <div>
+                            <span class="skill-badge bg-warning text-dark">n8n</span>
+                            <span class="skill-badge bg-warning text-dark">Playwright</span>
+                            <span class="skill-badge bg-warning text-dark">Selenium</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col" data-aos="fade-up" data-aos-delay="250">
+                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-success">
+                        <h5 class="text-light mb-2"><i class="bi bi-cpu me-2"></i>AI & LLM Development</h5>
+                        <div>
+                            <span class="skill-badge bg-success">OpenAI API</span>
+                            <span class="skill-badge bg-success">LangChain</span>
+                            <span class="skill-badge bg-success">DeepSeek</span>
+                            <span class="skill-badge bg-success">PyScript</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col" data-aos="fade-up" data-aos-delay="300">
+                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-secondary">
+                        <h5 class="text-light mb-2"><i class="bi bi-wrench-adjustable me-2"></i>Technical Skills</h5>
+                        <div>
+                            <span class="skill-badge">Windows OS</span>
+                            <span class="skill-badge">Networking</span>
+                            <span class="skill-badge">Troubleshooting</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col" data-aos="fade-up" data-aos-delay="350">
+                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-info">
+                        <h5 class="text-light mb-2"><i class="bi bi-bar-chart-line me-2"></i>Data Tools</h5>
+                        <div>
+                            <span class="skill-badge bg-info text-dark">Looker Studio</span>
+                            <span class="skill-badge bg-info text-dark">Tableau</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col" data-aos="fade-up" data-aos-delay="400">
+                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-light">
+                        <h5 class="text-light mb-2"><i class="bi bi-file-earmark-text me-2"></i>Office Tools</h5>
+                        <div>
+                            <span class="skill-badge bg-light text-dark">Word</span>
+                            <span class="skill-badge bg-light text-dark">Excel</span>
+                            <span class="skill-badge bg-light text-dark">PowerPoint</span>
+                            <span class="skill-badge bg-light text-dark">Outlook</span>
+                            <span class="skill-badge bg-light text-dark">Teams</span>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
         </section>
 
         <!-- Project Showcase -->
         <section class="mb-5">
-            <h2 class="section-title">Project Experience</h2>
+            <h2 class="section-title text-center text-warning mb-4">Project Experience</h2>
             <div class="row row-cols-1 row-cols-md-2 g-4">
-
-                <!-- Template Project -->
-                <div class="col">
-                    <div class="bg-dark p-4 rounded-3 shadow-sm project-card h-100">
-                        <h3 class="h6 text-light fw-semibold mb-2">1. REST API Monitoring System</h3>
-                        <p class="small  mb-3">
-                            Sistem monitoring operasional dari WhatsApp Grup, diringkas otomatis menggunakan LLM, lalu dikirim
-                            ke dashboard dan email internal.
-                        </p>
-                        <div class="d-flex flex-wrap gap-1 small">
-                            <span class="badge bg-secondary text-light">Python</span>
-                            <span class="badge bg-secondary text-light">FastAPI</span>
-                            <span class="badge bg-secondary text-light">PostgreSQL</span>
-                            <span class="badge bg-secondary text-light">Playwright</span>
-                            <span class="badge bg-secondary text-light">OpenAI API</span>
+        
+                <!-- Template Project Card -->
+                <div class="col" data-aos="fade-up">
+                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-primary h-100">
+                        <div class="d-flex align-items-start mb-3">
+                            <img src="https://cdn-icons-png.flaticon.com/128/17632/17632037.png" alt="API Icon" width="48"
+                                class="me-3">
+                            <div>
+                                <h5 class="text-light fw-semibold mb-1">AI ChatMonitor</h5>
+                                <p class="small  mb-0">Monitoring WhatsApp grup otomatis, diringkas pakai AI,
+                                    dikirim ke dashboard & email.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2 mt-3">
+                            <span class="badge bg-secondary">Python</span>
+                            <span class="badge bg-secondary">FastAPI</span>
+                            <span class="badge bg-secondary">PostgreSQL</span>
+                            <span class="badge bg-secondary">Playwright</span>
+                            <span class="badge bg-secondary">OpenAI API</span>
                         </div>
                     </div>
                 </div>
-
+        
                 <!-- Project 2 -->
-                <div class="col">
-                    <div class="bg-dark p-4 rounded-3 shadow-sm project-card h-100">
-                        <h3 class="h6 text-light fw-semibold mb-2">2. ETL Otomatisasi Data</h3>
-                        <p class="small  mb-3">
-                            ETL harian untuk scraping, cleaning, dan summarizing otomatis untuk dashboard Tableau.
-                        </p>
-                        <div class="d-flex flex-wrap gap-1 small">
+                <div class="col" data-aos="fade-up" data-aos-delay="50">
+                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-success h-100">
+                        <div class="d-flex align-items-start mb-3">
+                            <img src="https://cdn-icons-png.flaticon.com/128/17365/17365233.png" alt="ETL Icon" width="48"
+                                class="me-3">
+                            <div>
+                                <h5 class="text-light fw-semibold mb-1">ETLsync</h5>
+                                <p class="small  mb-0">Scraping, cleaning, summarizing otomatis harian untuk
+                                    dashboard Tableau.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2 mt-3">
                             <span class="badge bg-secondary">Python</span>
                             <span class="badge bg-secondary">Pandas</span>
-                            <span class="badge bg-secondary">LangChain</span>
-                            <span class="badge bg-secondary">DeepSeek</span>
+                            <span class="badge bg-secondary">BeautifulSoup</span>
                             <span class="badge bg-secondary">Tableau</span>
+                            <span class="badge bg-secondary">CRON</span>
                         </div>
                     </div>
                 </div>
-
+        
                 <!-- Project 3 -->
-                <div class="col">
-                    <div class="bg-dark p-4 rounded-3 shadow-sm project-card h-100">
-                        <h3 class="h6 text-light fw-semibold mb-2">3. QR Code Generator Web App</h3>
-                        <p class="small  mb-3">
-                            Aplikasi marketing berbasis QR dan shortlink dengan fitur redireksi cerdas dan login user.
-                        </p>
-                        <div class="d-flex flex-wrap gap-1 small">
+                <div class="col" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-warning h-100">
+                        <div class="d-flex align-items-start mb-3">
+                            <img src="https://cdn-icons-png.flaticon.com/128/14958/14958200.png" alt="QR Icon" width="48"
+                                class="me-3">
+                            <div>
+                                <h5 class="text-light fw-semibold mb-1">QR Code Generator Web App</h5>
+                                <p class="small  mb-0">Aplikasi marketing berbasis QR dan shortlink dengan
+                                    login user & redirect cerdas.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2 mt-3">
                             <span class="badge bg-secondary">PHP</span>
                             <span class="badge bg-secondary">Bootstrap</span>
                             <span class="badge bg-secondary">MySQL</span>
                         </div>
                     </div>
                 </div>
-
+        
                 <!-- Project 4 -->
-                <div class="col">
-                    <div class="bg-dark p-4 rounded-3 shadow-sm project-card h-100">
-                        <h3 class="h6 text-light fw-semibold mb-2">4. Sistem Monitoring Geografis Bank Sampah</h3>
-                        <p class="small  mb-3">
-                            Website peta interaktif untuk pemantauan area bank sampah, dengan sistem poin dan notifikasi lokasi
-                            penuh.
-                        </p>
-                        <div class="d-flex flex-wrap gap-1 small">
+                <div class="col" data-aos="fade-up" data-aos-delay="150">
+                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-info h-100">
+                        <div class="d-flex align-items-start mb-3">
+                            <img src="https://cdn-icons-png.flaticon.com/128/2828/2828696.png" alt="Map Icon" width="48"
+                                class="me-3">
+                            <div>
+                                <h5 class="text-light fw-semibold mb-1">Monitoring Geografis Bank Sampah</h5>
+                                <p class="small  mb-0">Peta interaktif untuk area bank sampah dengan sistem
+                                    poin dan notifikasi penuh.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2 mt-3">
                             <span class="badge bg-secondary">PHP</span>
                             <span class="badge bg-secondary">JavaScript</span>
                             <span class="badge bg-secondary">Leaflet.js</span>
@@ -123,137 +259,285 @@
                         </div>
                     </div>
                 </div>
-
+        
                 <!-- Project 5 -->
-                <div class="col">
-                    <div class="bg-dark p-4 rounded-3 shadow-sm project-card h-100">
-                        <h3 class="h6 text-light fw-semibold mb-2">5. Deteksi Citra Sampah Botol (NN Manual)</h3>
-                        <p class="small  mb-3">
-                            Proyek mini klasifikasi botol plastik dengan neural network manual tanpa library ML.
-                        </p>
-                        <div class="d-flex flex-wrap gap-1 small">
+                <div class="col" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-danger h-100">
+                        <div class="d-flex align-items-start mb-3">
+                            <img src="https://cdn-icons-png.flaticon.com/128/8637/8637092.png" alt="AI Icon" width="48"
+                                class="me-3">
+                            <div>
+                                <h5 class="text-light fw-semibold mb-1">Deteksi Citra Sampah Botol (NN Manual)</h5>
+                                <p class="small  mb-0">Klasifikasi botol plastik pakai neural network manual
+                                    tanpa library ML.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2 mt-3">
                             <span class="badge bg-secondary">Python</span>
                             <span class="badge bg-secondary">Flask</span>
                             <span class="badge bg-secondary">HTML/CSS</span>
                         </div>
                     </div>
                 </div>
-
+        
                 <!-- Project 6 -->
-                <div class="col">
-                    <div class="bg-dark p-4 rounded-3 shadow-sm project-card h-100">
-                        <h3 class="h6 text-light fw-semibold mb-2">6. Monitoring Infrastruktur Server & Jaringan</h3>
-                        <p class="small  mb-3">
-                            Pemantauan infrastruktur dengan Prometheus + Grafana dan sistem alert jaringan antar cabang.
-                        </p>
-                        <div class="d-flex flex-wrap gap-1 small">
+                <div class="col" data-aos="fade-up" data-aos-delay="250">
+                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-secondary h-100">
+                        <div class="d-flex align-items-start mb-3">
+                            <img src="https://cdn-icons-png.flaticon.com/128/5581/5581393.png" alt="Infra Icon" width="48"
+                                class="me-3">
+                            <div>
+                                <h5 class="text-light fw-semibold mb-1">Monitoring Infrastruktur Server & Jaringan</h5>
+                                <p class="small  mb-0">Pantau server & jaringan antar cabang pakai Prometheus
+                                    & Grafana + sistem alert.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2 mt-3">
                             <span class="badge bg-secondary">Grafana</span>
                             <span class="badge bg-secondary">Prometheus</span>
                             <span class="badge bg-secondary">Python</span>
                         </div>
                     </div>
                 </div>
-
+        
                 <!-- Project 7 -->
-                <div class="col">
-                    <div class="bg-dark p-4 rounded-3 shadow-sm project-card h-100">
-                        <h3 class="h6 text-light fw-semibold mb-2">7. Pelaporan Alat Keamanan Gedung (AppSheet)</h3>
-                        <p class="small  mb-3">
-                            Sistem pelaporan harian berbasis AppSheet untuk pengecekan alat HSE dan kendaraan.
-                        </p>
-                        <div class="d-flex flex-wrap gap-1 small">
+                <div class="col" data-aos="fade-up" data-aos-delay="300">
+                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-light h-100">
+                        <div class="d-flex align-items-start mb-3">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" alt="AppSheet Icon" width="48"
+                                class="me-3">
+                            <div>
+                                <h5 class="text-light fw-semibold mb-1">Pelaporan Alat Keamanan Gedung (AppSheet)</h5>
+                                <p class="small  mb-0">Sistem pelaporan harian berbasis AppSheet untuk
+                                    pengecekan alat HSE dan kendaraan.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2 mt-3">
                             <span class="badge bg-secondary">AppSheet</span>
                             <span class="badge bg-secondary">Google Sheets</span>
                             <span class="badge bg-secondary">Safety</span>
                         </div>
                     </div>
                 </div>
+        
+            </div>
+        </section>
 
+        <!-- Pengalaman Kerja -->
+        <section class="mb-5">
+            <h2 class="section-title text-center text-warning mb-4">Pengalaman Kerja</h2>
+        
+            <div class="row row-cols-1 g-4">
+        
+                <!-- Operational System Analyst -->
+                <div class="col">
+                    <div class="bg-body-secondary p-4 rounded-4 shadow-sm h-100 border-start border-4 border-warning">
+                        <div class="d-flex align-items-start mb-2">
+                            <i class="bi bi-diagram-3-fill fs-4 text-warning me-3"></i>
+                            <div>
+                                <h5 class="fw-bold text-dark mb-1">Operational System Analyst</h5>
+                                <small class="text-muted">Juni 2024 – Sekarang &nbsp; | &nbsp;
+                                    <span class="badge bg-secondary">Full-time</span></small>
+                            </div>
+                        </div>
+                        <p class="small text-dark mb-0 text-justify">
+                            Bertanggung jawab memantau sistem operasional maskapai, menganalisis performa, mengidentifikasi isu
+                            teknis, dan memberikan solusi IT. Terlibat dalam proyek peningkatan sistem internal untuk mendukung
+                            efisiensi lintas tim. Mengandalkan ketelitian, analisis cepat, dan komunikasi efektif dengan
+                            stakeholder.
+                        </p>
+                    </div>
+                </div>
+        
+                <!-- IT Staff -->
+                <div class="col">
+                    <div class="bg-body-secondary p-4 rounded-4 shadow-sm h-100 border-start border-4 border-info">
+                        <div class="d-flex align-items-start mb-2">
+                            <i class="bi bi-pc-display-horizontal fs-4 text-info me-3"></i>
+                            <div>
+                                <h5 class="fw-bold text-dark mb-1">IT Staff</h5>
+                                <small class="text-muted">Juni 2023 – Juni 2024 &nbsp; | &nbsp;
+                                    <span class="badge bg-secondary">Full-time</span></small>
+                            </div>
+                        </div>
+                        <p class="small text-dark mb-0 text-justify">
+                            Menangani instalasi, konfigurasi, dan perawatan perangkat IT serta jaringan. Melakukan backup data,
+                            monitoring infrastruktur, dan penanganan gangguan sistem. Berperan sebagai penghubung teknis dengan
+                            vendor
+                            saat terjadi kendala.
+                        </p>
+                    </div>
+                </div>
+        
+                <!-- Instruktur Freelance -->
+                <div class="col">
+                    <div class="bg-body-secondary p-4 rounded-4 shadow-sm h-100 border-start border-4 border-success">
+                        <div class="d-flex align-items-start mb-2">
+                            <i class="bi bi-laptop-fill fs-4 text-success me-3"></i>
+                            <div>
+                                <h5 class="fw-bold text-dark mb-1">Instruktur Coding Freelance</h5>
+                                <small class="text-muted">Remote &nbsp; | &nbsp;
+                                    <span class="badge bg-success">Freelance</span></small>
+                            </div>
+                        </div>
+                        <p class="small text-dark mb-0 text-justify">
+                            Mengajar pemrograman dasar (HTML, CSS, Ruby, Ruby on Rails) secara daring. Menyusun materi,
+                            membimbing peserta, dan memberi feedback tugas. Mengasah kemampuan komunikasi teknis dan pengajaran
+                            interaktif.
+                        </p>
+                    </div>
+                </div>
+        
+                <!-- Proyek AppSheet -->
+                <div class="col">
+                    <div class="bg-body-secondary p-4 rounded-4 shadow-sm h-100 border-start border-4 border-primary">
+                        <div class="d-flex align-items-start mb-2">
+                            <i class="bi bi-tools fs-4 text-primary me-3"></i>
+                            <div>
+                                <h5 class="fw-bold text-dark mb-1">Sistem Pelaporan HSE & GA (AppSheet)</h5>
+                                <small class="text-muted">Proyek Independen &nbsp; | &nbsp;
+                                    <span class="badge bg-primary">Independent Project</span></small>
+                            </div>
+                        </div>
+                        <p class="small text-dark mb-0 text-justify">
+                            Membuat sistem pelaporan digital untuk alat keselamatan menggunakan <strong>AppSheet</strong> dan
+                            <strong>Google Sheets</strong>. Sistem ini menggantikan proses manual dan mempercepat audit serta
+                            pemantauan
+                            alat seperti APAR, genset, lift, dan kendaraan operasional.
+                        </p>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+    <!-- CV Download -->
+    <section class="mb-5 text-center">
+        <h2 class="section-title text-center  mb-4">Download CV</h2>
+        <a href="cv/romiz-cv.pdf" class="btn btn-outline-warning px-4 py-2 fw-semibold shadow-sm" download>
+            <i class="bi bi-download me-2"></i> Unduh CV Saya
+        </a>
+    </section>
+
+
+        <!-- Artikel Terbaru -->
+        <section class="mb-5">
+            <h2 class="section-title text-center  mb-4">Artikel Terbaru</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent px-0">
+                    <a href="blog/artikel-pertama.html" class="text-decoration-none text-warning">
+                        📘 Belajar ETL dengan Python
+                    </a>
+                </li>
+                <li class="list-group-item bg-transparent px-0">
+                    <a href="blog/api-fastapi.html" class="text-decoration-none text-warning">
+                        ⚡ Belajar REST API dalam Hitungan Menit
+                    </a>
+                </li>
+                <li class="list-group-item bg-transparent px-0">
+                    <a href="blog/fundamental-monitoring.html" class="text-decoration-none text-warning">
+                        🛠️ Belajar Monitoring Infrastruktur IT
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        
+        <!-- Sertifikasi -->
+        <section class="mb-5">
+            <h2 class="section-title text-center text-warning mb-4">Sertifikasi</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+        
+                <!-- Sertifikat -->
+                <div class="col">
+                     <div class="cert-card border-warning border-start">
+                        <div class="d-flex align-items-center">
+                            <span class="fs-3 me-3">🛡️</span>
+                            <div>
+                                <h6 class="fw-bold mb-0">Cybersecurity Fundamental</h6>
+                                <small>Cynnex - PGN COM</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col">
+                    <div class="cert-card border-warning border-start">
+                        <div class="d-flex align-items-center">
+                            <span class="fs-3 me-3">💻</span>
+                            <div>
+                                <h6 class="fw-bold mb-0">Full Stack Developer with Ruby</h6>
+                                <small ">Digitalent Kominfo</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col">
+                    <div class="cert-card border-warning border-start">
+                        <div class="d-flex align-items-center">
+                            <span class="fs-3 me-3">📊</span>
+                            <div>
+                                <h6 class="fw-bold mb-0">Data Analysis for Retail: Sales Performance Report</h6>
+                                <small ">DQLab</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col">
+                    <div class="cert-card border-warning border-start">
+                        <div class="d-flex align-items-center">
+                            <span class="fs-3 me-3">🔐</span>
+                            <div>
+                                <h6 class="fw-bold mb-0">Cybersecurity Awareness & Tools</h6>
+                                <small ">DQLab</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
             </div>
         </section>
 
 
-        <!-- Pengalaman Kerja (Updated to Article Format) -->
-        <section class="mb-5">
-            <h2 class="section-title">Pengalaman Kerja</h2>
-        
-            <article class="mb-4">
-                <h5>Operational System Analyst</h5>
-                <p><strong>Juni 2024 – Saat Ini</strong></p>
-                <p>
-                    Bertanggung jawab memantau sistem operasional maskapai, menganalisis performa, mengidentifikasi isu teknis, dan
-                    memberikan solusi IT. Terlibat dalam proyek peningkatan sistem internal untuk mendukung efisiensi lintas tim.Mengandalkan ketelitian, analisis cepat, dan komunikasi efektif dengan stakeholder.
-                </p>
-            </article>
-        
-            <article class="mb-4">
-                <h5>IT Staff</h5>
-                <p><strong>Juni 2023 – Juni 2024</strong></p>
-                <p>
-                    Menangani instalasi, konfigurasi, dan perawatan perangkat IT serta jaringan. Melakukan backup data, monitoring
-                    infrastruktur, dan penanganan gangguan sistem. Berperan sebagai penghubung teknis dengan vendor saat terjadi kendala.
-                </p>
-            </article>
-        
-            <article class="mb-4">
-                <h5>Instruktur Coding Freelance</h5>
-                <p><strong>Remote / Paruh Waktu</strong></p>
-                <p>
-                    Mengajar pemrograman dasar (HTML, CSS, Ruby, Ruby on Rails), secara daring. Menyusun materi, membimbing peserta, dan
-                    memberi feedback tugas. Mengasah kemampuan komunikasi teknis dan pengajaran interaktif.
-                </p>
-            </article>
-        
-            <article class="mb-4">
-                <h5>Pembuatan Sistem Pelaporan Harian HSE & GA (AppSheet)</h5>
-                <p><strong>Proyek Independen</strong></p>
-                <p>
-                    Membuat sistem pelaporan digital untuk alat keselamatan menggunakan <strong>AppSheet & Google Sheets</strong>. Sistem ini menggantikan
-                    proses manual dan mempercepat audit serta pemantauan alat seperti APAR, genset, lift, dan kendaraan operasional
-                </p>
-            </article>
-        </section>
 
-
-        <!-- CV Download -->
-        <section class="mb-5">
-            <h2 class="section-title">Download CV</h2>
-            <a href="cv/romiz-cv.pdf" class="btn btn-outline-light" download>
-                <i class="bi bi-download"></i> Unduh CV Saya
-            </a>
-        </section>
-
-        <!-- Artikel Terbaru -->
-        <section class="mb-5">
-            <h2 class="section-title">Artikel Terbaru</h2>
-            <ul>
-                <li><a href="blog/artikel-pertama.html" class="text-warning">Belajar ETL dengan Python</a></li>
-                <li><a href="blog/api-fastapi.html" class="text-warning"> BelajarREST API dalam Hitungan Menit</a></li>
-                <li><a href="blog/fundamental-monitoring.html" class="text-warning"> Belajar Monitoring Infrastruktur IT</a></li>
-
-            </ul>
-        </section>
-
-        <!-- Sertifikasi -->
-        <section class="mb-5">
-            <h2 class="section-title">Sertifikasi</h2>
-            <ul class="list-group">
-                <li>Cybersecurity Fundamental – Cynnex - PGN COM</li>
-                <li>Full Stack Developer with Ruby – Digitalent Kominfo</li>
-                <li>Data Analysis for Retail: Sales Performance Report – DQLab</li>
-                <li>Cybersecurity Awareness & Tools – DQLab</li>
-            </ul>
-        </section>
 
         <!-- Kontak -->
-        <section>
-            <h2 class="section-title">Kontak</h2>
-            <p>Email: <a href="ahmadromiz01@gmail.com" class="text-warning">ahmadromiz01@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/ahmadromiz" class="text-warning"
-                    target="_blank">linkedin.com/in/ahmadromiz</a></p>
-            <p>GitHub: <a href="https://github.com/ahmadromiz" class="text-warning"
-                    target="_blank">github.com/ahmadromiz</a></p>
+        <section class="mb-5">
+            <h2 class="section-title text-center mb-4 text-light">Kontak</h2>
+            <ul class="list-unstyled fs-5 d-flex flex-column align-items-start gap-3">
+
+                <li>
+                    <a href="mailto:ahmadromiz01@gmail.com" class="text-decoration-none d-flex  text-warning">
+                        <i class="bi bi-envelope-fill me-2 fs-4"></i>
+                        <span class="hover-underline">ahmadromiz01@gmail.com</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/in/ahmadromiz" target="_blank"
+                        class="text-decoration-none d-flex  text-warning">
+                        <i class="bi bi-linkedin me-2 fs-4"></i>
+                        <span class="hover-underline">linkedin.com/in/ahmadromiz</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/ahmadromiz" target="_blank"
+                        class="text-decoration-none d-flex  text-warning">
+                        <i class="bi bi-github me-2 fs-4"></i>
+                        <span class="hover-underline">github.com/ahmadromiz</span>
+                    </a>
+                </li>
+            </ul>
         </section>
 
-</main>
+
+
+    </main>
 </body>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+</html>
