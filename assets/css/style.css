@@ -194,3 +194,55 @@ ul#history li {
         padding: 1rem;
     }
 }
+
+/* Job Article Custom */
+ .job-card {
+     background-color: #f8f9fa;
+     border-left: 5px solid #0d6efd;
+     transition: all 0.3s ease;
+ }
+
+ .job-card:hover {
+     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+     transform: translateY(-3px);
+ }
+
+ .job-header {
+     display: flex;
+     align-items: center;
+     gap: 15px;
+     margin-bottom: 10px;
+ }
+
+ .job-icon {
+     width: 50px;
+     height: 50px;
+ }
+
+ .job-icons {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 15px;
+     margin-top: 15px;
+ }
+
+ .job-icons>div {
+     text-align: center;
+     width: 80px;
+ }
+
+ .job-icons img {
+     width: 40px;
+     height: 40px;
+     margin-bottom: 5px;
+ }
+
+ .job-icons p {
+     margin: 0;
+     font-size: 14px;
+     color: #333;
+ }
+ .job-icons img:hover {
+     transform: scale(1.1);
+     transition: transform 0.2s ease;
+ }
