@@ -317,3 +317,22 @@ ul#history li {
         padding-top: 1rem;
     }
 }
+
+.gallery-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.gallery-scroll::-webkit-scrollbar-thumb {
+    background-color: #ffc107;
+    /* kuning seperti tema */
+    border-radius: 4px;
+}
+
+.gallery-scroll {
+    scroll-behavior: smooth;
+    overflow-x: auto;
+}
+
+.gallery-scroll>div {
+    scroll-snap-align: start;
+}

@@ -1,0 +1,122 @@
+<!-- boosys-landing\blog\api-env-github.html-->
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mengamankan API Key dengan .env di GitHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4712/4712009.png" type="image/png" />
+</head>
+
+<body class="container py-5">
+
+    <h1 class="mb-4">🔐 Mengamankan Akses API & Kunci Rahasia Menggunakan <code>.env</code></h1>
+
+    <p class="lead">Banyak pengembang pemula secara tidak sengaja membagikan kunci API atau informasi rahasia mereka
+        karena tidak tahu cara menggunakan file <code>.env</code>. Artikel ini akan membahas praktik aman menyimpan
+        informasi sensitif dalam proyek berbasis Git.</p>
+
+    <h3>🚨 Masalah Umum: API Key Tercommit ke Publik</h3>
+    <p>Banyak kasus di mana developer menyimpan API key langsung di dalam kode seperti ini:</p>
+
+    <pre><code class="bg-dark text-light p-3 rounded d-block">API_KEY = "12345-abcde-fghij"</code></pre>
+
+    <p>Ketika file ini dikirim ke GitHub, siapa pun bisa melihat kunci tersebut dan menyalahgunakannya. Bahkan bot
+        crawler GitHub bisa mendeteksinya dalam hitungan menit.</p>
+
+    <h3>🧪 Solusi: Gunakan File <code>.env</code></h3>
+    <ol>
+        <li>Buat file bernama <code>.env</code> di root proyek kamu.</li>
+        <li>Masukkan variable rahasia ke dalamnya, contoh:</li>
+    </ol>
+
+    <pre><code class="bg-dark text-light p-3 rounded d-block">API_KEY=12345-abcde-fghij
+DB_PASSWORD=my-secret-pass</code></pre>
+
+    <ol start="3">
+        <li>Gunakan package seperti <code>python-dotenv</code> (Python) atau <code>dotenv</code> (Node.js) untuk
+            membacanya dalam kode.</li>
+        <li>Tambahkan <code>.env</code> ke file <code>.gitignore</code>:</li>
+    </ol>
+
+    <pre><code class="bg-dark text-light p-3 rounded d-block"># .gitignore
+.env</code></pre>
+
+    <p>Dengan ini, Git tidak akan pernah mengikutsertakan file <code>.env</code> ke dalam commit.</p>
+
+    <h3>📦 Contoh Implementasi (Python)</h3>
+    <pre><code class="bg-dark text-light p-3 rounded d-block">from dotenv import load_dotenv
+import os
+
+load_dotenv()
+api_key = os.getenv("API_KEY")
+
+print(f"API kamu: {api_key}")</code></pre>
+
+    <h3>🔒 Tips Keamanan Tambahan</h3>
+    <ul>
+        <li>Jangan pernah commit <code>.env</code>, walau di private repo.</li>
+        <li>Gunakan layanan pengelolaan rahasia (secrets manager) untuk produksi.</li>
+        <li>Jika sudah terlanjur bocor, revoke API key sesegera mungkin.</li>
+    </ul>
+
+    <h4>📌 Bonus: Cara Menambahkan Secrets di GitHub Actions</h4>
+    <p>GitHub menyediakan <strong>Secrets</strong> yang bisa digunakan di workflows. Masuk ke repo → Settings → Secrets
+        → New repository secret.</p>
+
+    <p>Contoh penggunaan di <code>action.yml</code>:</p>
+    <pre><code class="bg-dark text-light p-3 rounded d-block">env:
+  API_KEY: ${{ secrets.API_KEY }}</code></pre>
+
+<h4 class="mt-5 text-warning">🐍 Bonus untuk Pengguna Flask: Di Mana File <code>.env</code> Harus Ditaruh?</h4>
+<p>Dalam proyek Flask, file <code>.env</code> idealnya diletakkan di root proyek, sejajar dengan file seperti
+    <code>app.py</code> atau <code>run.py</code>.</p>
+
+<pre><code class="bg-dark text-light p-3 rounded d-block">my-flask-app/
+├── app.py
+├── .env
+├── requirements.txt
+└── templates/</code></pre>
+
+<p>Contoh isi file <code>.env</code>:</p>
+<pre><code class="bg-dark text-light p-3 rounded d-block">FLASK_ENV=development
+SECRET_KEY=sangat-rahasia
+DATABASE_URL=sqlite:///site.db</code></pre>
+
+<p>Gunakan <code>python-dotenv</code> untuk membacanya di <code>app.py</code>:</p>
+<pre><code class="bg-dark text-light p-3 rounded d-block">from dotenv import load_dotenv
+import os
+
+load_dotenv()
+secret = os.getenv("SECRET_KEY")
+
+app = Flask(__name__)
+app.config['SECRET_KEY'] = secret</code></pre>
+
+<p class="text-info">📌 Pastikan juga menambahkan <code>.env</code> ke <code>.gitignore</code> agar tidak terupload ke
+    GitHub.</p>
+
+
+    <footer class="mt-5 pt-4 border-top text-white" style="background-color: #111;">
+        <div class="container">
+            <h5 class="text-warning">🧠 Ditutup Dengan Pesan</h5>
+            <p class="mb-1">🔐 Jangan pernah anggap sepele masalah keamanan kecil. Sekali kunci API bocor, bisa jadi
+                celaka!</p>
+            <p class="mb-1">🛡️ Artikel ini dibuat untuk membantu kamu menjadi developer yang tidak hanya jago coding,
+                tapi juga paham praktik keamanan.</p>
+            <p class="mb-0">☕ Ditulis oleh Rz sambil ngopi dan audit repo pribadi yang dulu pernah bocorin
+                <code>.env</code> (ups 😅).</p>
+        </div>
+        <div class="text-center my-5">
+            <a href="../index.html" class="btn btn-outline-light btn-lg">
+                <i class="bi bi-arrow-left"></i> Kembali ke Halaman Utama
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -19,26 +19,43 @@
    
     <main class="container py-5">
 
-        <!-- Hero Section -->
-        <section class="text-center mb-5">
-            <img src="assets/img/profil.png" alt="Foto Profil romiz Code - Data Analyst & Developer"
-                class="rounded-circle mb-3 img-fluid shadow" width="150" loading="lazy" />
-            <h1 class="text-warning" style="text-transform: capitalize;">romiz</h1>
-            <span id="typed-output" class="lead text-light"></span>
-            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-            <script>
-                new Typed('#typed-output', {
-                    strings: ['Data Analyst', 'REST API Developer', 'AI Enthusiast'],
-                    typeSpeed: 60,
-                    backSpeed: 40,
-                    loop: true
-                });
-            </script>
+       <!-- Hero Section -->
+    <section class="text-center mb-5">
+        <img src="assets/img/profile2.jpg" alt="Profile Photo of romiz - Data Analyst & Developer"
+            class="rounded-circle mb-3 img-fluid shadow" width="150" loading="lazy" />
+    
+        <h1 class="text-warning" style="text-transform: capitalize;">romiz</h1>
+    
+        <span id="typed-output" class="lead text-light"></span>
+    
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            new Typed('#typed-output', {
+                strings: ['Data Analyst', 'REST API Developer', 'AI Enthusiast'],
+                typeSpeed: 60,
+                backSpeed: 40,
+                loop: true
+            });
+        </script>
+    
+        <p class="lead text-light">🚀 Automation | 🤖 AI | 🧠 Data Enthusiast</p>
+    
+        <span class="badge bg-warning text-dark">Open for Collaboration</span>
+    
+        <div class="mt-4 text-light">
+            <p class="lead fst-italic px-3">
+                This is more than just a portfolio. It's a journey — from lines of code that build solutions,
+                to light that frames the moments of my path. Every page, every photo, every project here
+                carries stories, failures, lessons, and the courage to grow.
+            </p>
+            <p class="small text-warning px-3">
+                I believe that the world of technology is not just about logic, but also about stories and connection.
+                If you're reading this, welcome to my journey.
+            </p>
+        </div>
+    </section>
 
-            <p class="lead text-light">🚀 Automation | 🤖 AI | 🧠 Data Enthusiast</p>
-            
-            <span class="badge bg-warning text-dark">Open for Collaboration</span>
-        </section>
+
         <!-- switch bahasa -->
         <section class="mb-5 text-center">
             <div class="mb-4">
@@ -452,6 +469,11 @@
         <section class="mb-5">
             <h2 class="section-title text-center  mb-4">Latest Articles</h2>
             <li class="list-group-item bg-transparent px-0">
+                <a href="blog/api-env.html" class="text-decoration-none text-warning">
+                    📘 Mengamankan Akses API & Kunci Rahasia Menggunakan .env
+                </a>
+            </li>
+            <li class="list-group-item bg-transparent px-0">
                 <a href="blog/async-python.html" class="text-decoration-none text-warning">
                     🐍 async-python
                 </a>
@@ -591,6 +613,95 @@
         
             </div>
         </section>
+
+        <!-- Travel Gallery -->
+        <section class="mb-5 position-relative">
+            <h2 class="section-title text-center text-warning mb-4">📸 Journey Through Images</h2>
+        
+            <!-- Left Button -->
+            <button onclick="scrollGallery(-1)" class="btn btn-dark position-absolute top-50 start-0 translate-middle-y z-3"
+                style="z-index: 10;">
+                ‹
+            </button>
+        
+            <!-- Gallery -->
+            <div id="galleryContainer" class="gallery-scroll d-flex overflow-hidden px-3 gap-3">
+                <!-- Photo Items -->
+                <div class="flex-shrink-0 text-center">
+                    <img src="assets/img/galeri/2.jpg" class="img-thumbnail border border-3 border-warning shadow"
+                        style="height: 300px;" alt="Gallery image 2">
+                    <p class="text-light small mt-2"> </p>
+                </div>
+                <div class="flex-shrink-0 text-center">
+                    <img src="assets/img/galeri/3.jpg" class="img-thumbnail border border-3 border-warning shadow"
+                        style="height: 300px;" alt="Gallery image 3">
+                    <p class="text-light small mt-2"> </p>
+                </div>
+                <div class="flex-shrink-0 text-center">
+                    <img src="assets/img/galeri/4.jpg" class="img-thumbnail border border-3 border-warning shadow"
+                        style="height: 300px;" alt="Gallery image 4">
+                    <p class="text-light small mt-2"> </p>
+                </div>
+                <div class="flex-shrink-0 text-center">
+                    <img src="assets/img/galeri/5.jpg" class="img-thumbnail border border-3 border-warning shadow"
+                        style="height: 300px;" alt="Gallery image 5">
+                    <p class="text-light small mt-2"> </p>
+                </div>
+                <div class="flex-shrink-0 text-center">
+                    <img src="assets/img/galeri/6.jpg" class="img-thumbnail border border-3 border-warning shadow"
+                        style="height: 300px;" alt="Gallery image 6">
+                    <p class="text-light small mt-2"> </p>
+                </div>
+                <div class="flex-shrink-0 text-center">
+                    <img src="assets/img/galeri/7.jpg" class="img-thumbnail border border-3 border-warning shadow"
+                        style="height: 300px;" alt="Gallery image 7">
+                    <p class="text-light small mt-2"> </p>
+                </div>
+                <div class="flex-shrink-0 text-center">
+                    <img src="assets/img/galeri/8.jpg" class="img-thumbnail border border-3 border-warning shadow"
+                        style="height: 300px;" alt="Gallery image 8">
+                    <p class="text-light small mt-2"> </p>
+                </div>
+                <div class="flex-shrink-0 text-center">
+                    <img src="assets/img/galeri/9.jpg" class="img-thumbnail border border-3 border-warning shadow"
+                        style="height: 300px;" alt="Gallery image 9">
+                    <p class="text-light small mt-2"> </p>
+                </div>
+                
+                <!-- Add more images as needed -->
+            </div>
+        
+            <!-- Right Button -->
+            <button onclick="scrollGallery(1)" class="btn btn-dark position-absolute top-50 end-0 translate-middle-y z-3"
+                style="z-index: 10;">
+                ›
+            </button>
+        </section>
+        
+        <script>
+            function scrollGallery(direction) {
+                const container = document.getElementById('galleryContainer');
+                const scrollAmount = 320; // Size of each photo + gap
+                const maxScrollLeft = container.scrollWidth - container.clientWidth;
+
+                if (direction === 1) {
+                    // Scroll right
+                    if (Math.ceil(container.scrollLeft + scrollAmount) >= maxScrollLeft) {
+                        container.scrollTo({ left: 0, behavior: 'smooth' });
+                    } else {
+                        container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                    }
+                } else {
+                    // Scroll left
+                    if (container.scrollLeft <= 0) {
+                        container.scrollTo({ left: maxScrollLeft, behavior: 'smooth' });
+                    } else {
+                        container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                    }
+                }
+            }
+        </script>
+
 
     <!-- Contact -->
     <section class="mb-5">

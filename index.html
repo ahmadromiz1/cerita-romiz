@@ -20,7 +20,7 @@
 
         <!-- Hero Section -->
         <section class="text-center mb-5">
-            <img src="assets/img/profil.png" alt="Foto Profil romiz Code - Data Analyst & Developer"
+            <img src="assets/img/profile2.jpg" alt="Foto Profil romiz Code - Data Analyst & Developer"
                 class="rounded-circle mb-3 img-fluid shadow" width="150" loading="lazy" />
             <h1 class="text-warning" style="text-transform: capitalize;">romiz</h1>
             <span id="typed-output" class="lead text-light"></span>
@@ -36,7 +36,20 @@
 
             <p class="lead text-light">🚀 Automation | 🤖 AI | 🧠 Data Enthusiast</p>
             <span class="badge bg-warning text-dark">Open for Collaboration</span>
+            <div class="mt-4 text-light">
+                <p class="lead fst-italic px-3">
+                    Ini bukan sekadar portofolio. Ini adalah catatan perjalanan — dari baris-baris kode yang membentuk solusi,
+                    hingga cahaya yang membingkai momen dalam perjalanan saya. Setiap halaman, setiap foto, setiap proyek di sini
+                    membawa cerita, kegagalan, pembelajaran, dan keberanian untuk tumbuh.
+                </p>
+                <p class="small text-warning px-3">
+                    Saya percaya bahwa dunia teknologi bukan hanya tentang logika, tapi juga tentang cerita dan koneksi. Jika Anda
+                    membaca ini, selamat datang dalam perjalanan saya.
+                </p>
+            </div>
+
         </section>
+        
         <!-- switch bahasa -->
         <section class="mb-5 text-center">
             <div class="mb-4">
@@ -339,7 +352,6 @@
             </div>
         </section>
 
-
         <!-- Pengalaman Kerja -->
         <section class="mb-5">
             <h2 class="section-title text-center text-warning mb-4">Pengalaman Kerja</h2>
@@ -442,8 +454,13 @@
             <h2 class="section-title text-center  mb-4">Artikel Terbaru</h2>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item bg-transparent px-0">
+                    <a href="blog/api-env.html" class="text-decoration-none text-warning">
+                        📘 Mengamankan Akses API & Kunci Rahasia Menggunakan .env
+                    </a>
+                </li>
+                <li class="list-group-item bg-transparent px-0">
                     <a href="blog/async-python.html" class="text-decoration-none text-warning">
-                        🐍 async-python
+                        🐍 Async-Python
                     </a>
                 </li>
                 <li class="list-group-item bg-transparent px-0">
@@ -583,6 +600,72 @@
             </div>
         </section>
 
+        <!-- Galeri Perjalanan -->
+        <section class="mb-5 position-relative">
+            <h2 class="section-title text-center text-warning mb-4">📸 Perjalanan dalam Gambar</h2>
+
+            <!-- Tombol Kiri -->
+            <button onclick="scrollGallery(-1)" class="btn btn-dark position-absolute top-50 start-0 translate-middle-y z-3"
+                style="z-index: 10;">
+                ‹
+            </button>
+
+            <!-- Galeri -->
+            <div id="galleryContainer" class="gallery-scroll d-flex overflow-hidden px-3 gap-3">
+                <!-- Foto-foto -->
+                
+                <div class="flex-shrink-0 text-center">
+                    <img src="assets/img/galeri/2.jpg" class="img-thumbnail border border-3 border-warning shadow"
+                        style="height: 300px;" alt="...">
+                    <p class="text-light small mt-2"> </p>
+                </div>
+                <div class="flex-shrink-0 text-center">
+                    <img src="assets/img/galeri/3.jpg" class="img-thumbnail border border-3 border-warning shadow"
+                        style="height: 300px;" alt="...">
+                    <p class="text-light small mt-2"> </p>
+                </div>
+                <div class="flex-shrink-0 text-center">
+                    <img src="assets/img/galeri/4.jpg" class="img-thumbnail border border-3 border-warning shadow"
+                        style="height: 300px;" alt="...">
+                    <p class="text-light small mt-2"> </p>
+                </div>
+                <div class="flex-shrink-0 text-center">
+                    <img src="assets/img/galeri/5.jpg" class="img-thumbnail border border-3 border-warning shadow"
+                        style="height: 300px;" alt="...">
+                    <p class="text-light small mt-2"> </p>
+                </div>
+                <div class="flex-shrink-0 text-center">
+                    <img src="assets/img/galeri/6.jpg" class="img-thumbnail border border-3 border-warning shadow"
+                        style="height: 300px;" alt="...">
+                    <p class="text-light small mt-2"> </p>
+                </div>
+                <div class="flex-shrink-0 text-center">
+                    <img src="assets/img/galeri/7.jpg" class="img-thumbnail border border-3 border-warning shadow"
+                        style="height: 300px;" alt="...">
+                    <p class="text-light small mt-2"> </p>
+                </div>
+                <div class="flex-shrink-0 text-center">
+                    <img src="assets/img/galeri/8.jpg" class="img-thumbnail border border-3 border-warning shadow"
+                        style="height: 300px;" alt="...">
+                    <p class="text-light small mt-2"> </p>
+                </div>
+                <div class="flex-shrink-0 text-center">
+                    <img src="assets/img/galeri/9.jpg" class="img-thumbnail border border-3 border-warning shadow"
+                        style="height: 300px;" alt="...">
+                    <p class="text-light small mt-2"> </p>
+                </div>
+                
+                <!-- Tambahkan semua foto seperti sebelumnya -->
+                <!-- ... -->
+            </div>
+
+            <!-- Tombol Kanan -->
+            <button onclick="scrollGallery(1)" class="btn btn-dark position-absolute top-50 end-0 translate-middle-y z-3"
+                style="z-index: 10;">
+                ›
+            </button>
+        </section>
+
         <!-- Kontak -->
         <section class="mb-5">
             <h2 class="section-title text-center mb-4 text-light">Kontak</h2>
@@ -633,6 +716,32 @@
     </footer>
 
 
+
+<script>
+    function scrollGallery(direction) {
+        const container = document.getElementById('galleryContainer');
+        const scrollAmount = 320; // Ukuran tiap foto + gap
+        const maxScrollLeft = container.scrollWidth - container.clientWidth;
+
+        if (direction === 1) {
+            // Scroll ke kanan
+            if (Math.ceil(container.scrollLeft + scrollAmount) >= maxScrollLeft) {
+                // Kalau di akhir → lompat ke awal
+                container.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        } else {
+            // Scroll ke kiri
+            if (container.scrollLeft <= 0) {
+                // Kalau di awal → lompat ke akhir
+                container.scrollTo({ left: maxScrollLeft, behavior: 'smooth' });
+            } else {
+                container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            }
+        }
+    }
+</script>
 
 
 </body>
