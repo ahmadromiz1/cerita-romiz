@@ -179,83 +179,65 @@ ul#history li {
     box-shadow: 0 10px 24px rgba(255, 193, 7, 0.2);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .section-title {
-        font-size: 1.3rem;
-    }
-
-    p,
-    li {
-        font-size: 0.95rem;
-    }
-
-    .project-card {
-        padding: 1rem;
-    }
+/* Job Article Custom */
+.job-card {
+    background-color: #f8f9fa;
+    border-left: 5px solid #0d6efd;
+    transition: all 0.3s ease;
 }
 
-/* Job Article Custom */
- .job-card {
-     background-color: #f8f9fa;
-     border-left: 5px solid #0d6efd;
-     transition: all 0.3s ease;
- }
+.job-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
 
- .job-card:hover {
-     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-     transform: translateY(-3px);
- }
+.job-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
 
- .job-header {
-     display: flex;
-     align-items: center;
-     gap: 15px;
-     margin-bottom: 10px;
- }
+.job-icon {
+    width: 50px;
+    height: 50px;
+}
 
- .job-icon {
-     width: 50px;
-     height: 50px;
- }
+.job-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
 
- .job-icons {
-     display: flex;
-     flex-wrap: wrap;
-     gap: 15px;
-     margin-top: 15px;
- }
+.job-icons>div {
+    text-align: center;
+    width: 80px;
+}
 
- .job-icons>div {
-     text-align: center;
-     width: 80px;
- }
+.job-icons img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+    transition: transform 0.2s ease;
+}
 
- .job-icons img {
-     width: 40px;
-     height: 40px;
-     margin-bottom: 5px;
- }
+.job-icons img:hover {
+    transform: scale(1.1);
+}
 
- .job-icons p {
-     margin: 0;
-     font-size: 14px;
-     color: #333;
- }
- .job-icons img:hover {
-     transform: scale(1.1);
-     transition: transform 0.2s ease;
- }
+.job-icons p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
 
 /* === Sidebar Collapse & Expand === */
-/* Layout dasar */
-/* Wrapper Flex Layout */
 #layout-wrapper {
     display: flex;
     min-height: 100vh;
 }
 
-/* Sidebar */
 #sidebar {
     width: 250px;
     transition: width 0.3s ease;
@@ -283,7 +265,6 @@ ul#history li {
     text-align: center;
 }
 
-/* Konten utama tetap center dari sisa ruang */
 #content-wrapper {
     flex-grow: 1;
     display: flex;
@@ -297,7 +278,26 @@ ul#history li {
     max-width: 960px;
 }
 
-/* Responsif untuk mobile */
+/* Galeri scroll horizontal */
+.gallery-scroll {
+    scroll-behavior: smooth;
+    overflow-x: auto;
+}
+
+.gallery-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.gallery-scroll::-webkit-scrollbar-thumb {
+    background-color: #ffc107;
+    border-radius: 4px;
+}
+
+.gallery-scroll>div {
+    scroll-snap-align: start;
+}
+
+/* === Responsive === */
 @media (max-width: 768px) {
     #layout-wrapper {
         flex-direction: column;
@@ -316,23 +316,72 @@ ul#history li {
     #content-wrapper {
         padding-top: 1rem;
     }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    p,
+    li {
+        font-size: 0.95rem;
+    }
+
+    .project-card {
+        padding: 1rem;
+    }
 }
 
-.gallery-scroll::-webkit-scrollbar {
-    height: 8px;
-}
+@media (max-width: 576px) {
+    body {
+        font-size: 0.95rem;
+    }
 
-.gallery-scroll::-webkit-scrollbar-thumb {
-    background-color: #ffc107;
-    /* kuning seperti tema */
-    border-radius: 4px;
-}
+    h1 {
+        font-size: 1.75rem;
+    }
 
-.gallery-scroll {
-    scroll-behavior: smooth;
-    overflow-x: auto;
-}
+    h2 {
+        font-size: 1.5rem;
+    }
 
-.gallery-scroll>div {
-    scroll-snap-align: start;
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+    }
+
+    p,
+    li {
+        font-size: 0.9rem;
+    }
+
+    .btn-gold,
+    button {
+        font-size: 0.9rem;
+        padding: 0.4rem 1rem;
+    }
+
+    input,
+    textarea,
+    select {
+        font-size: 0.9rem;
+    }
+
+    code {
+        font-size: 0.85em;
+    }
+
+    pre {
+        font-size: 0.85rem;
+    }
+
+    .job-icons p {
+        font-size: 12px;
+    }
 }
