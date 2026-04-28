@@ -13,6 +13,17 @@ const typingWords = [
   "Secure application delivery"
 ];
 
+if (document.documentElement.lang === "id") {
+  typingWords.splice(
+    0,
+    typingWords.length,
+    "Arsitektur internal system",
+    "Otomasi ETL dan reporting",
+    "Tool operasional berbantuan AI",
+    "Delivery aplikasi yang aman"
+  );
+}
+
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
 }
