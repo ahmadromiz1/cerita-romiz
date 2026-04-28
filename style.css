@@ -212,15 +212,26 @@ p {
 .lang-switch {
   display: inline-flex;
   align-items: center;
-  padding: 0.28rem;
+  gap: 0.28rem;
+  padding: 0.28rem 0.34rem;
   border-radius: 999px;
-  border: 1px solid rgba(145, 184, 255, 0.16);
-  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(145, 184, 255, 0.18);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.03));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.lang-switch-label {
+  padding: 0 0.55rem 0 0.45rem;
+  color: rgba(156, 179, 207, 0.82);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .lang-link {
   min-width: 2.6rem;
-  min-height: 2.2rem;
+  min-height: 2.15rem;
   padding: 0 0.8rem;
   display: inline-flex;
   align-items: center;
@@ -230,12 +241,18 @@ p {
   font-size: 0.84rem;
   font-weight: 800;
   letter-spacing: 0.04em;
-  transition: background 0.25s ease, color 0.25s ease;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.lang-link:hover {
+  color: var(--heading);
+  transform: translateY(-1px);
 }
 
 .lang-link.is-active {
   color: #04101d;
   background: linear-gradient(135deg, #00c2ff, #67d8ff);
+  box-shadow: 0 8px 18px rgba(0, 194, 255, 0.22);
 }
 
 .nav-link {
@@ -695,6 +712,7 @@ p {
 
   .lang-switch {
     justify-content: center;
+    width: 100%;
   }
 
   .nav-cta {
