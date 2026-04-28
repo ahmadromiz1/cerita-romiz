@@ -1,763 +1,436 @@
 <!DOCTYPE html>
-<html lang="id">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Romiz - Profil Profesional</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <link rel="icon" href="assets/img/icons/5581393.png" type="image/png">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romiz Labs | Systems, Automation, Data, and AI Portfolio</title>
+  <meta name="description" content="Romiz Labs builds practical systems for automation, data pipelines, AI-powered tools, secure web applications, and business operations.">
+  <meta name="keywords" content="Romiz Labs, fullstack developer, automation, data pipeline, AI tools, Laravel, DevOps, internal systems">
+  <meta name="author" content="Romiz Labs">
+  <meta name="theme-color" content="#081526">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Romiz Labs | Systems, Automation, Data, and AI Portfolio">
+  <meta property="og:description" content="Professional portfolio for Romiz Labs, focused on internal systems, automation workflows, AI integration, and infrastructure-ready web solutions.">
+  <meta property="og:url" content="https://ahmadromiz1.github.io/cerita-romiz/index-en.html">
+  <meta property="og:site_name" content="Romiz Labs">
+  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23081526'/%3E%3Ccircle cx='880' cy='150' r='120' fill='%2300c2ff' fill-opacity='0.18'/%3E%3Ccircle cx='210' cy='480' r='180' fill='%232189ff' fill-opacity='0.12'/%3E%3Ctext x='90' y='275' fill='white' font-family='Arial, sans-serif' font-size='82' font-weight='700'%3ERomiz Labs%3C/text%3E%3Ctext x='90' y='360' fill='%2394a8c6' font-family='Arial, sans-serif' font-size='34'%3EBuilding practical systems for automation, data, AI, and operations.%3C/text%3E%3C/svg%3E">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Romiz Labs | Systems, Automation, Data, and AI Portfolio">
+  <meta name="twitter:description" content="Romiz Labs builds practical systems for automation, data pipelines, AI-powered tools, secure web applications, and business operations.">
+  <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23081526'/%3E%3Ccircle cx='880' cy='150' r='120' fill='%2300c2ff' fill-opacity='0.18'/%3E%3Ccircle cx='210' cy='480' r='180' fill='%232189ff' fill-opacity='0.12'/%3E%3Ctext x='90' y='275' fill='white' font-family='Arial, sans-serif' font-size='82' font-weight='700'%3ERomiz Labs%3C/text%3E%3Ctext x='90' y='360' fill='%2394a8c6' font-family='Arial, sans-serif' font-size='34'%3EBuilding practical systems for automation, data, AI, and operations.%3C/text%3E%3C/svg%3E">
+  <link rel="canonical" href="https://ahmadromiz1.github.io/cerita-romiz/index-en.html">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23081526'/%3E%3Cpath d='M18 46V18h13.8c8.6 0 14.2 5.4 14.2 13.6S40.4 46 31.8 46H18zm8-6h5.2c5 0 8.6-3.2 8.6-8.4s-3.6-8.4-8.6-8.4H26V40z' fill='%2300c2ff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-
-<body class="bg-dark text-light">
-    <!-- Tambahkan di navbar atau section atas -->
-   
-    <main class="container py-5">
-
-       <!-- Hero Section -->
-    <section class="text-center mb-5">
-        <img src="assets/img/profile2.jpg" alt="Profile Photo of romiz - Data Analyst & Developer"
-            class="rounded-circle mb-3 img-fluid shadow" width="150" loading="lazy" />
-    
-        <h1 class="text-warning" style="text-transform: capitalize;">romiz</h1>
-    
-        <span id="typed-output" class="lead text-light"></span>
-    
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <script>
-            new Typed('#typed-output', {
-                strings: ['Data Analyst', 'REST API Developer', 'AI Enthusiast'],
-                typeSpeed: 60,
-                backSpeed: 40,
-                loop: true
-            });
-        </script>
-    
-        <p class="lead text-light">🚀 Automation | 🤖 AI | 🧠 Data Enthusiast</p>
-    
-        <span class="badge bg-warning text-dark">Open for Collaboration</span>
-    
-        <div class="mt-4 text-light">
-            <p class="lead fst-italic px-3">
-                This is more than just a portfolio. It's a journey — from lines of code that build solutions,
-                to light that frames the moments of my path. Every page, every photo, every project here
-                carries stories, failures, lessons, and the courage to grow.
-            </p>
-            <p class="small text-warning px-3">
-                I believe that the world of technology is not just about logic, but also about stories and connection.
-                If you're reading this, welcome to my journey.
-            </p>
-        </div>
-    </section>
-
-
-        <!-- switch bahasa -->
-        <section class="mb-5 text-center">
-            <div class="mb-4">
-                <a href="index-en.html" class="btn btn-outline-warning btn-sm">🇬🇧 English</a>
-                <a href="index.html" class="btn btn-outline-light btn-sm">🇮🇩 Indonesia</a>
-            </div>
-        </section>
-
-
-        <!-- About Me -->
-        <section class="mb-5">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <p class="lead text-justify" style="text-align: justify;">
-                    I am a professional in the field of data and technology, focusing on developing ETL pipelines, REST APIs,
-                    business process automation, and AI-driven solutions. I have experience designing efficient and scalable
-                    systems
-                    to support the operational needs of modern companies.
-                </p>
-                <p class="text-justify" style="text-align: justify;">
-                    My expertise includes data transformation, backend system integration, and the implementation of AI models
-                    for
-                    analytics and automation. I enjoy building impactful solutions that directly improve work efficiency and
-                    data-driven decision-making.
-                </p>
-            </div>
-        </section>
-
-        
-        <!-- Skills & Tools -->
-        <section class="mb-5">
-            <h2 class="section-title text-warning text-center mb-4">Skills & Tools</h2>
-        
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-        
-                <!-- Skill Card Template -->
-                <div class="col" data-aos="fade-up">
-                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-warning">
-                        <h5 class="text-light mb-2"><i class="bi bi-code-slash me-2"></i>Programming Languages</h5>
-                        <div>
-                            <span class="skill-badge">Python</span>
-                            <span class="skill-badge">PHP</span>
-                            <span class="skill-badge">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col" data-aos="fade-up" data-aos-delay="50">
-                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-info">
-                        <h5 class="text-light mb-2"><i class="bi bi-box me-2"></i>Frameworks</h5>
-                        <div>
-                            <span class="skill-badge bg-info text-dark">FastAPI</span>
-                            <span class="skill-badge bg-info text-dark">Flask</span>
-                            <span class="skill-badge bg-info text-dark">CodeIgniter</span>
-                            <span class="skill-badge bg-info text-dark">Laravel (basic)</span>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col" data-aos="fade-up" data-aos-delay="100">
-                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-primary">
-                        <h5 class="text-light mb-2"><i class="bi bi-palette me-2"></i>Frontend & UI</h5>
-                        <div>
-                            <span class="skill-badge bg-primary">Bootstrap</span>
-                            <span class="skill-badge bg-primary">Tailwind CSS</span>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col" data-aos="fade-up" data-aos-delay="150">
-                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-light">
-                        <h5 class="text-light mb-2"><i class="bi bi-tools me-2"></i>DevOps & Tools</h5>
-                        <div>
-                            <span class="skill-badge">Linux</span>
-                            <span class="skill-badge">Docker</span>
-                            <span class="skill-badge">Git</span>
-                            <span class="skill-badge">GitHub</span>
-                            <span class="skill-badge">VS Code</span>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col" data-aos="fade-up" data-aos-delay="200">
-                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-warning">
-                        <h5 class="text-light mb-2"><i class="bi bi-robot me-2"></i>Automation & Testing</h5>
-                        <div>
-                            <span class="skill-badge bg-warning text-dark">n8n</span>
-                            <span class="skill-badge bg-warning text-dark">Playwright</span>
-                            <span class="skill-badge bg-warning text-dark">Selenium</span>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col" data-aos="fade-up" data-aos-delay="250">
-                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-success">
-                        <h5 class="text-light mb-2"><i class="bi bi-cpu me-2"></i>AI & LLM Development</h5>
-                        <div>
-                            <span class="skill-badge bg-success">OpenAI API</span>
-                            <span class="skill-badge bg-success">LangChain</span>
-                            <span class="skill-badge bg-success">DeepSeek</span>
-                            <span class="skill-badge bg-success">PyScript</span>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col" data-aos="fade-up" data-aos-delay="300">
-                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-secondary">
-                        <h5 class="text-light mb-2"><i class="bi bi-wrench-adjustable me-2"></i>Technical Skills</h5>
-                        <div>
-                            <span class="skill-badge">Windows OS</span>
-                            <span class="skill-badge">Networking</span>
-                            <span class="skill-badge">Troubleshooting</span>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col" data-aos="fade-up" data-aos-delay="350">
-                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-info">
-                        <h5 class="text-light mb-2"><i class="bi bi-bar-chart-line me-2"></i>Data Tools</h5>
-                        <div>
-                            <span class="skill-badge bg-info text-dark">Looker Studio</span>
-                            <span class="skill-badge bg-info text-dark">Tableau</span>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col" data-aos="fade-up" data-aos-delay="400">
-                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-light">
-                        <h5 class="text-light mb-2"><i class="bi bi-file-earmark-text me-2"></i>Office Tools</h5>
-                        <div>
-                            <span class="skill-badge bg-light text-dark">Word</span>
-                            <span class="skill-badge bg-light text-dark">Excel</span>
-                            <span class="skill-badge bg-light text-dark">PowerPoint</span>
-                            <span class="skill-badge bg-light text-dark">Outlook</span>
-                            <span class="skill-badge bg-light text-dark">Teams</span>
-                        </div>
-                    </div>
-                </div>
-        
-            </div>
-        </section>
-
-
-        <!-- Project Showcase -->
-        <section class="mb-5">
-            <h2 class="section-title text-center text-warning mb-4">Project Experience</h2>
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-        
-                <!-- Project 1 -->
-                <div class="col" data-aos="fade-up">
-                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-primary h-100">
-                        <div class="d-flex align-items-start mb-3">
-                            <img src="assets/img/icons/17632037.png" alt="API Icon" width="48" class="me-3">
-                            <div>
-                                <h5 class="text-light fw-semibold mb-1">AI ChatMonitor</h5>
-                                <p class="small mb-0">Automatically monitors WhatsApp groups, summarizes using AI, and sends
-                                    updates to dashboard & email.</p>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-wrap gap-2 mt-3">
-                            <span class="badge bg-secondary">Python</span>
-                            <span class="badge bg-secondary">FastAPI</span>
-                            <span class="badge bg-secondary">PostgreSQL</span>
-                            <span class="badge bg-secondary">Playwright</span>
-                            <span class="badge bg-secondary">OpenAI API</span>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Project 2 -->
-                <div class="col" data-aos="fade-up" data-aos-delay="50">
-                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-success h-100">
-                        <div class="d-flex align-items-start mb-3">
-                            <img src="assets/img/icons/17365233.png" alt="ETL Icon" width="48" class="me-3">
-                            <div>
-                                <h5 class="text-light fw-semibold mb-1">ETLsync</h5>
-                                <p class="small mb-0">Automated daily scraping, cleaning, and summarizing for Tableau dashboard.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-wrap gap-2 mt-3">
-                            <span class="badge bg-secondary">Python</span>
-                            <span class="badge bg-secondary">Pandas</span>
-                            <span class="badge bg-secondary">BeautifulSoup</span>
-                            <span class="badge bg-secondary">Tableau</span>
-                            <span class="badge bg-secondary">CRON</span>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Project 3 -->
-                <div class="col" data-aos="fade-up" data-aos-delay="100">
-                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-warning h-100">
-                        <div class="d-flex align-items-start mb-3">
-                            <img src="assets/img/icons/14958200.png" alt="QR Icon" width="48" class="me-3">
-                            <div>
-                                <h5 class="text-light fw-semibold mb-1">QR Code Generator Web App</h5>
-                                <p class="small mb-0">Marketing app with QR & shortlink system, user login, and smart
-                                    redirection.</p>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-wrap gap-2 mt-3">
-                            <span class="badge bg-secondary">PHP</span>
-                            <span class="badge bg-secondary">Bootstrap</span>
-                            <span class="badge bg-secondary">MySQL</span>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Project 4 -->
-                <div class="col" data-aos="fade-up" data-aos-delay="100">
-                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-warning h-100">
-                        <div class="d-flex align-items-start mb-3">
-                            <img src="assets/img/icons/writing.png" alt="Python Icon" width="48" class="me-3">
-                            <div>
-                                <h5 class="text-light fw-semibold mb-1">Financial & Tax Reporting System (PAX)</h5>
-                                <p class="small mb-0">Desktop app for processing Excel data and generating automatic financial
-                                    reports per agent.</p>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-wrap gap-2 mt-3">
-                            <span class="badge bg-secondary">Python</span>
-                            <span class="badge bg-secondary">Pandas</span>
-                            <span class="badge bg-secondary">Tkinter / PyQt</span>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Project 5 -->
-                <div class="col" data-aos="fade-up" data-aos-delay="150">
-                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-info h-100">
-                        <div class="d-flex align-items-start mb-3">
-                            <img src="assets/img/icons/2828696.png" alt="Map Icon" width="48" class="me-3">
-                            <div>
-                                <h5 class="text-light fw-semibold mb-1">Geographic Monitoring of Waste Banks</h5>
-                                <p class="small mb-0">Interactive map with point system and full notifications for waste bank
-                                    zones.</p>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-wrap gap-2 mt-3">
-                            <span class="badge bg-secondary">PHP</span>
-                            <span class="badge bg-secondary">JavaScript</span>
-                            <span class="badge bg-secondary">Leaflet.js</span>
-                            <span class="badge bg-secondary">MySQL</span>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Project 6 -->
-                <div class="col" data-aos="fade-up" data-aos-delay="200">
-                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-danger h-100">
-                        <div class="d-flex align-items-start mb-3">
-                            <img src="assets/img/icons/8637092.png" alt="AI Icon" width="48" class="me-3">
-                            <div>
-                                <h5 class="text-light fw-semibold mb-1">Bottle Waste Image Detection (Manual NN)</h5>
-                                <p class="small mb-0">Plastic bottle classification using custom neural network without ML
-                                    libraries.</p>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-wrap gap-2 mt-3">
-                            <span class="badge bg-secondary">Python</span>
-                            <span class="badge bg-secondary">Flask</span>
-                            <span class="badge bg-secondary">HTML/CSS</span>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Project 7 -->
-                <div class="col" data-aos="fade-up" data-aos-delay="250">
-                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-secondary h-100">
-                        <div class="d-flex align-items-start mb-3">
-                            <img src="assets/img/icons/5581393.png" alt="Infra Icon" width="48" class="me-3">
-                            <div>
-                                <h5 class="text-light fw-semibold mb-1">Server & Network Infrastructure Monitoring</h5>
-                                <p class="small mb-0">Monitoring inter-branch servers and networks using Prometheus, Grafana,
-                                    and alert system.</p>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-wrap gap-2 mt-3">
-                            <span class="badge bg-secondary">Grafana</span>
-                            <span class="badge bg-secondary">Prometheus</span>
-                            <span class="badge bg-secondary">Python</span>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Project 8 -->
-                <div class="col" data-aos="fade-up" data-aos-delay="300">
-                    <div class="p-4 bg-dark rounded-4 shadow-sm border-start border-4 border-light h-100">
-                        <div class="d-flex align-items-start mb-3">
-                            <img src="assets/img/icons/2991148.png" alt="AppSheet Icon" width="48" class="me-3">
-                            <div>
-                                <h5 class="text-light fw-semibold mb-1">Building Safety Equipment Reporting (AppSheet)</h5>
-                                <p class="small mb-0">AppSheet-based daily reporting system for HSE equipment and vehicle
-                                    checks.</p>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-wrap gap-2 mt-3">
-                            <span class="badge bg-secondary">AppSheet</span>
-                            <span class="badge bg-secondary">Google Sheets</span>
-                            <span class="badge bg-secondary">Safety</span>
-                        </div>
-                    </div>
-                </div>
-        
-            </div>
-        </section>
-
-        <!-- Work Experience -->
-        <section class="mb-5">
-            <h2 class="section-title text-center text-warning mb-4">Work Experience</h2>
-
-            <div class="row row-cols-1 g-4">
-
-                <!-- Operational System Analyst -->
-                <div class="col">
-                    <div class="bg-body-secondary p-4 rounded-4 shadow-sm h-100 border-start border-4 border-warning">
-                        <div class="d-flex align-items-start mb-2">
-                            <i class="bi bi-diagram-3-fill fs-4 text-warning me-3"></i>
-                            <div>
-                                <h5 class="fw-bold text-dark mb-1">Operational System Analyst</h5>
-                                <small class="text-muted">June 2024 – Present &nbsp; | &nbsp;
-                                    <span class="badge bg-secondary">Full-time</span></small>
-                            </div>
-                        </div>
-                        <p class="small text-dark mb-0 text-justify">
-                            Responsible for monitoring airline operational systems, analyzing performance, identifying technical
-                            issues,
-                            and providing IT solutions. Involved in internal system improvement projects to support cross-team
-                            efficiency.
-                            Relies on precision, quick analysis, and effective stakeholder communication.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- IT Staff -->
-                <div class="col">
-                    <div class="bg-body-secondary p-4 rounded-4 shadow-sm h-100 border-start border-4 border-info">
-                        <div class="d-flex align-items-start mb-2">
-                            <i class="bi bi-pc-display-horizontal fs-4 text-info me-3"></i>
-                            <div>
-                                <h5 class="fw-bold text-dark mb-1">IT Staff</h5>
-                                <small class="text-muted">June 2023 – June 2024 &nbsp; | &nbsp;
-                                    <span class="badge bg-secondary">Full-time</span></small>
-                            </div>
-                        </div>
-                        <p class="small text-dark mb-0 text-justify">
-                            Handled installation, configuration, and maintenance of IT equipment and network. Conducted data
-                            backups,
-                            monitored infrastructure, and resolved system issues. Acted as the technical liaison with vendors
-                            during
-                            troubleshooting.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Freelance Coding Instructor -->
-                <div class="col">
-                    <div class="bg-body-secondary p-4 rounded-4 shadow-sm h-100 border-start border-4 border-success">
-                        <div class="d-flex align-items-start mb-2">
-                            <i class="bi bi-laptop-fill fs-4 text-success me-3"></i>
-                            <div>
-                                <h5 class="fw-bold text-dark mb-1">Freelance Coding Instructor</h5>
-                                <small class="text-muted">Remote &nbsp; | &nbsp;
-                                    <span class="badge bg-success">Freelance</span></small>
-                            </div>
-                        </div>
-                        <p class="small text-dark mb-0 text-justify">
-                            Taught basic programming (HTML, CSS, Ruby, Ruby on Rails) in online classes. Created learning
-                            materials,
-                            guided participants, and provided assignment feedback. Enhanced technical communication and
-                            interactive
-                            teaching skills.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- AppSheet Project -->
-                <div class="col">
-                    <div class="bg-body-secondary p-4 rounded-4 shadow-sm h-100 border-start border-4 border-primary">
-                        <div class="d-flex align-items-start mb-2">
-                            <i class="bi bi-tools fs-4 text-primary me-3"></i>
-                            <div>
-                                <h5 class="fw-bold text-dark mb-1">HSE & General Affairs Reporting System (AppSheet)</h5>
-                                <small class="text-muted">Independent Project &nbsp; | &nbsp;
-                                    <span class="badge bg-primary">Independent Project</span></small>
-                            </div>
-                        </div>
-                        <p class="small text-dark mb-0 text-justify">
-                            Developed a digital reporting system for safety equipment using <strong>AppSheet</strong> and
-                            <strong>Google Sheets</strong>. The system replaced manual processes and improved audit speed and
-                            monitoring
-                            of tools such as fire extinguishers, generators, elevators, and operational vehicles.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-    <!-- CV Download -->
-    <!-- <section class="mb-5 text-center">
-        <h2 class="section-title text-center  mb-4">Download CV</h2>
-        <a href="cv/romiz-cv.pdf" class="btn btn-outline-warning px-4 py-2 fw-semibold shadow-sm" download>
-            <i class="bi bi-download me-2"></i> Unduh CV Saya
+<body>
+  <div class="site-shell">
+    <header class="navbar-wrapper">
+      <nav class="navbar container">
+        <a class="brand" href="#home" aria-label="Romiz Labs home">
+          <span class="brand-mark">RL</span>
+          <span class="brand-text">Romiz Labs</span>
         </a>
-    </section> -->
 
-        <!-- Latest Articles -->
-        <section class="mb-5">
-            <h2 class="section-title text-center  mb-4">Latest Articles</h2>
-            <li class="list-group-item bg-transparent px-0">
-                <a href="blog/api-env.html" class="text-decoration-none text-warning">
-                    📘 Mengamankan Akses API & Kunci Rahasia Menggunakan .env
-                </a>
-            </li>
-            <li class="list-group-item bg-transparent px-0">
-                <a href="blog/async-python.html" class="text-decoration-none text-warning">
-                    🐍 async-python
-                </a>
-            </li>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item bg-transparent px-0">
-                    <a href="blog/artikel-pertama.html" class="text-decoration-none text-warning">
-                        📘 Belajar ETL dengan Python
-                    </a>
-                </li>
-                <li class="list-group-item bg-transparent px-0">
-                    <a href="blog/api-fastapi.html" class="text-decoration-none text-warning">
-                        ⚡ Belajar REST API dalam Hitungan Menit
-                    </a>
-                </li>
-                <li class="list-group-item bg-transparent px-0">
-                    <a href="blog/fundamental-monitoring.html" class="text-decoration-none text-warning">
-                        🛠️ Belajar Monitoring Infrastruktur IT
-                    </a>
-                </li>
-            </ul>
-        </section>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-        <!-- Certifications -->
-        <section class="mb-5">
-            <h2 class="section-title text-center text-warning mb-4">Certifications</h2>
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-        
-                <!-- Certificate Items -->
-                <div class="col">
-                    <div class="cert-card border-warning border-start">
-                        <div class="d-flex align-items-center">
-                            <span class="fs-3 me-3">🛡️</span>
-                            <div>
-                                <h6 class="fw-bold mb-0">Cybersecurity Fundamental</h6>
-                                <small>Cynnex - PGN COM</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col">
-                    <div class="cert-card border-warning border-start">
-                        <div class="d-flex align-items-center">
-                            <span class="fs-3 me-3">🧮</span>
-                            <div>
-                                <h6 class="fw-bold mb-0">Machine Learning</h6>
-                                <small>Dicoding Indonesia</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col">
-                    <div class="cert-card border-warning border-start">
-                        <div class="d-flex align-items-center">
-                            <span class="fs-3 me-3">💻</span>
-                            <div>
-                                <h6 class="fw-bold mb-0">Full Stack Developer with Ruby</h6>
-                                <small>Digitalent Kominfo</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col">
-                    <div class="cert-card border-warning border-start">
-                        <div class="d-flex align-items-center">
-                            <span class="fs-3 me-3">📊</span>
-                            <div>
-                                <h6 class="fw-bold mb-0">Data Analysis for Retail: Sales Performance Report</h6>
-                                <small>DQLab</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col">
-                    <div class="cert-card border-warning border-start">
-                        <div class="d-flex align-items-center">
-                            <span class="fs-3 me-3">📈</span>
-                            <div>
-                                <h6 class="fw-bold mb-0">Data Visualization</h6>
-                                <small>Dicoding Indonesia</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col">
-                    <div class="cert-card border-warning border-start">
-                        <div class="d-flex align-items-center">
-                            <span class="fs-3 me-3">🤖</span>
-                            <div>
-                                <h6 class="fw-bold mb-0">Data Science with Python</h6>
-                                <small>DQLab</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col">
-                    <div class="cert-card border-warning border-start">
-                        <div class="d-flex align-items-center">
-                            <span class="fs-3 me-3">📊</span>
-                            <div>
-                                <h6 class="fw-bold mb-0">Data Analysis with Python - Beginner</h6>
-                                <small>DQLab</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col">
-                    <div class="cert-card border-warning border-start">
-                        <div class="d-flex align-items-center">
-                            <span class="fs-3 me-3">🔐</span>
-                            <div>
-                                <h6 class="fw-bold mb-0">Cybersecurity Awareness & Tools</h6>
-                                <small>DQLab</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col">
-                    <div class="cert-card border-warning border-start">
-                        <div class="d-flex align-items-center">
-                            <span class="fs-3 me-3">🧩</span>
-                            <div>
-                                <h6 class="fw-bold mb-0">Full-Stack Developer with C#</h6>
-                                <small>KodeHive</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
+        <div class="nav-panel" id="site-menu">
+          <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#expertise" class="nav-link">Expertise</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#stack" class="nav-link">Stack</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+          <a class="button button-primary nav-cta" href="#contact">Contact Me</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Personal Tech Brand</p>
+            <h1>Building Practical Systems for Automation, Data, AI, and Business Operations.</h1>
+            <p class="hero-subtitle">
+              Romiz Labs focuses on creating internal systems, automation workflows, data pipelines, AI-powered tools, and secure web applications that help business operations run faster, cleaner, and more efficiently.
+            </p>
+
+            <div class="hero-typing">
+              <span class="typing-label">Core focus:</span>
+              <span class="typing-text" id="typing-text">Internal systems architecture</span>
             </div>
-        </section>
 
-        <!-- Travel Gallery -->
-        <section class="mb-5 position-relative">
-            <h2 class="section-title text-center text-warning mb-4">📸 Journey Through Images</h2>
-        
-            <!-- Left Button -->
-            <button onclick="scrollGallery(-1)" class="btn btn-dark position-absolute top-50 start-0 translate-middle-y z-3"
-                style="z-index: 10;">
-                ‹
-            </button>
-        
-            <!-- Gallery -->
-            <div id="galleryContainer" class="gallery-scroll d-flex overflow-hidden px-3 gap-3">
-                <!-- Photo Items -->
-                <div class="flex-shrink-0 text-center">
-                    <img src="assets/img/galeri/2.jpg" class="img-thumbnail border border-3 border-warning shadow"
-                        style="height: 300px;" alt="Gallery image 2">
-                    <p class="text-light small mt-2"> </p>
-                </div>
-                <div class="flex-shrink-0 text-center">
-                    <img src="assets/img/galeri/3.jpg" class="img-thumbnail border border-3 border-warning shadow"
-                        style="height: 300px;" alt="Gallery image 3">
-                    <p class="text-light small mt-2"> </p>
-                </div>
-                <div class="flex-shrink-0 text-center">
-                    <img src="assets/img/galeri/4.jpg" class="img-thumbnail border border-3 border-warning shadow"
-                        style="height: 300px;" alt="Gallery image 4">
-                    <p class="text-light small mt-2"> </p>
-                </div>
-                <div class="flex-shrink-0 text-center">
-                    <img src="assets/img/galeri/5.jpg" class="img-thumbnail border border-3 border-warning shadow"
-                        style="height: 300px;" alt="Gallery image 5">
-                    <p class="text-light small mt-2"> </p>
-                </div>
-                <div class="flex-shrink-0 text-center">
-                    <img src="assets/img/galeri/6.jpg" class="img-thumbnail border border-3 border-warning shadow"
-                        style="height: 300px;" alt="Gallery image 6">
-                    <p class="text-light small mt-2"> </p>
-                </div>
-                <div class="flex-shrink-0 text-center">
-                    <img src="assets/img/galeri/7.jpg" class="img-thumbnail border border-3 border-warning shadow"
-                        style="height: 300px;" alt="Gallery image 7">
-                    <p class="text-light small mt-2"> </p>
-                </div>
-                <div class="flex-shrink-0 text-center">
-                    <img src="assets/img/galeri/8.jpg" class="img-thumbnail border border-3 border-warning shadow"
-                        style="height: 300px;" alt="Gallery image 8">
-                    <p class="text-light small mt-2"> </p>
-                </div>
-                <div class="flex-shrink-0 text-center">
-                    <img src="assets/img/galeri/9.jpg" class="img-thumbnail border border-3 border-warning shadow"
-                        style="height: 300px;" alt="Gallery image 9">
-                    <p class="text-light small mt-2"> </p>
-                </div>
-                
-                <!-- Add more images as needed -->
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">View Projects</a>
+              <a class="button button-secondary" href="#contact">Contact Me</a>
             </div>
-        
-            <!-- Right Button -->
-            <button onclick="scrollGallery(1)" class="btn btn-dark position-absolute top-50 end-0 translate-middle-y z-3"
-                style="z-index: 10;">
-                ›
-            </button>
-        </section>
-        
-        <script>
-            function scrollGallery(direction) {
-                const container = document.getElementById('galleryContainer');
-                const scrollAmount = 320; // Size of each photo + gap
-                const maxScrollLeft = container.scrollWidth - container.clientWidth;
 
-                if (direction === 1) {
-                    // Scroll right
-                    if (Math.ceil(container.scrollLeft + scrollAmount) >= maxScrollLeft) {
-                        container.scrollTo({ left: 0, behavior: 'smooth' });
-                    } else {
-                        container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-                    }
-                } else {
-                    // Scroll left
-                    if (container.scrollLeft <= 0) {
-                        container.scrollTo({ left: maxScrollLeft, behavior: 'smooth' });
-                    } else {
-                        container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-                    }
-                }
-            }
-        </script>
+            <div class="badge-row">
+              <span class="chip">Fullstack Development</span>
+              <span class="chip">AI &amp; Data</span>
+              <span class="chip">Automation</span>
+              <span class="chip">DevOps &amp; Infra</span>
+            </div>
+          </div>
 
+          <div class="hero-panel reveal">
+            <div class="signal-card">
+              <div class="signal-top">
+                <span class="signal-title">Operational Design Focus</span>
+                <span class="signal-badge">Systems Builder</span>
+              </div>
+              <div class="signal-metrics">
+                <article>
+                  <strong>Internal Systems</strong>
+                  <p>Designing tools that reduce friction across recurring business workflows.</p>
+                </article>
+                <article>
+                  <strong>Data &amp; Automation</strong>
+                  <p>Turning manual reporting, ETL, and monitoring tasks into structured pipelines.</p>
+                </article>
+                <article>
+                  <strong>Security-Aware Delivery</strong>
+                  <p>Building maintainable web applications with access control and backup discipline.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!-- Contact -->
-    <section class="mb-5">
-        <h2 class="section-title text-center mb-4 text-light">Contact</h2>
-        <ul class="list-unstyled fs-5 d-flex flex-column align-items-start gap-3">
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">About Romiz Labs</p>
+            <h2>A focused technology lab for operational problem solving.</h2>
+            <p>
+              Romiz Labs is a personal technology lab focused on solving real operational problems through software, data, automation, and infrastructure-ready solutions.
+            </p>
+          </div>
 
-            <li>
-                <a href="mailto:ahmadromiz01@gmail.com" class="text-decoration-none d-flex text-warning">
-                    <i class="bi bi-envelope-fill me-2 fs-4"></i>
-                    <span class="hover-underline">ahmadromiz01@gmail.com</span>
-                </a>
-            </li>
+          <div class="about-grid">
+            <article class="glass-card reveal">
+              <h3>Business-first thinking</h3>
+              <p>Every system starts with understanding how work actually moves across teams, approvals, reports, and daily operational constraints.</p>
+            </article>
+            <article class="glass-card reveal">
+              <h3>Lean technical execution</h3>
+              <p>The goal is practical delivery: fewer moving parts, clear ownership, and solutions that can run reliably without unnecessary complexity.</p>
+            </article>
+            <article class="glass-card reveal">
+              <h3>Infrastructure-ready mindset</h3>
+              <p>Applications are shaped with deployment, database safety, backup flows, observability, and long-term maintainability in mind.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-            <li>
-                <a href="https://linkedin.com/in/ahmadromiz" target="_blank"
-                    class="text-decoration-none d-flex text-warning">
-                    <i class="bi bi-linkedin me-2 fs-4"></i>
-                    <span class="hover-underline">linkedin.com/in/ahmadromiz</span>
-                </a>
-            </li>
+      <section class="section" id="expertise">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Expertise</p>
+            <h2>Core capabilities built around operations, delivery, and maintainability.</h2>
+          </div>
 
-            <li>
-                <a href="https://github.com/ahmadromiz" target="_blank"
-                    class="text-decoration-none d-flex text-warning">
-                    <i class="bi bi-github me-2 fs-4"></i>
-                    <span class="hover-underline">github.com/ahmadromiz</span>
-                </a>
-            </li>
+          <div class="card-grid expertise-grid">
+            <article class="glass-card reveal">
+              <i class="bi bi-diagram-3"></i>
+              <h3>Internal Business Systems</h3>
+              <p>Operational dashboards, process tracking, approval flows, admin panels, and tools that reduce fragmented work.</p>
+            </article>
+            <article class="glass-card reveal">
+              <i class="bi bi-window-stack"></i>
+              <h3>Laravel &amp; Web Application Development</h3>
+              <p>Backend-driven applications, role-based systems, API integrations, and maintainable interfaces for business teams.</p>
+            </article>
+            <article class="glass-card reveal">
+              <i class="bi bi-bezier2"></i>
+              <h3>Data Pipeline &amp; ETL</h3>
+              <p>Structured import flows, transformation logic, recurring schedules, warehousing support, and reporting automation.</p>
+            </article>
+            <article class="glass-card reveal">
+              <i class="bi bi-cpu"></i>
+              <h3>AI Tools Integration</h3>
+              <p>AI-assisted workflows, prompt-driven tooling, internal copilots, and API-based automation for knowledge work.</p>
+            </article>
+            <article class="glass-card reveal">
+              <i class="bi bi-database-check"></i>
+              <h3>Database &amp; Backup Operations</h3>
+              <p>Schema handling, backup planning, data consistency routines, restoration readiness, and operational safeguards.</p>
+            </article>
+            <article class="glass-card reveal">
+              <i class="bi bi-shield-lock"></i>
+              <h3>DevOps, Server Setup &amp; Security</h3>
+              <p>Lightweight deployment flows, Linux server setup, scheduled jobs, environment management, and security-conscious hardening.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-        </ul>
-    </section>
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Featured Projects</p>
+            <h2>Selected project directions aligned with business operations and technical clarity.</h2>
+          </div>
 
+          <div class="card-grid project-grid">
+            <article class="project-card glass-card reveal">
+              <div class="project-head">
+                <h3>Corporate Website Replatforming with Laravel CMS Engine</h3>
+                <span class="status-badge status-production">Production Ready</span>
+              </div>
+              <p>Rebuilt a corporate website on a new Laravel-based engine and admin CMS with a focus on maintainability, modern environment compatibility, stronger security, and minimal visual changes from the existing site.</p>
+              <div class="tag-row">
+                <span>Laravel</span>
+                <span>CMS</span>
+                <span>Admin Panel</span>
+                <span>Security</span>
+              </div>
+            </article>
 
+            <article class="project-card glass-card reveal">
+              <div class="project-head">
+                <h3>Corporate Website Engine Modernization</h3>
+                <span class="status-badge status-production">Production Ready</span>
+              </div>
+              <p>Reworked content structure, frontend delivery, and maintainability standards for a faster and cleaner corporate web presence.</p>
+              <div class="tag-row">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+              </div>
+            </article>
+
+            <article class="project-card glass-card reveal">
+              <div class="project-head">
+                <h3>Postflight ETL Automation</h3>
+                <span class="status-badge status-internal">Internal</span>
+              </div>
+              <p>Automated recurring operational data intake, transformation, and cleanup for faster reporting and reduced manual spreadsheet work.</p>
+              <div class="tag-row">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>Cron</span>
+                <span>ETL</span>
+              </div>
+            </article>
+
+            <article class="project-card glass-card reveal">
+              <div class="project-head">
+                <h3>Safety Report Data Warehouse Mapping</h3>
+                <span class="status-badge status-prototype">Prototype</span>
+              </div>
+              <p>Mapped reporting data into warehouse-friendly structures to support trend analysis, cleaner joins, and future BI workflows.</p>
+              <div class="tag-row">
+                <span>MariaDB</span>
+                <span>Data Warehouse</span>
+                <span>SQL</span>
+                <span>Reporting</span>
+              </div>
+            </article>
+
+            <article class="project-card glass-card reveal">
+              <div class="project-head">
+                <h3>Employee QR Verification System</h3>
+                <span class="status-badge status-production">Production Ready</span>
+              </div>
+              <p>Built an internal verification flow for employee identity checks with scannable access logic and audit-friendly results.</p>
+              <div class="tag-row">
+                <span>Laravel</span>
+                <span>QR Code</span>
+                <span>Auth</span>
+                <span>Admin Panel</span>
+              </div>
+            </article>
+
+            <article class="project-card glass-card reveal">
+              <div class="project-head">
+                <h3>Cooperative / Member Management SaaS</h3>
+                <span class="status-badge status-concept">Concept</span>
+              </div>
+              <p>Designed a modular member system for registration, contribution tracking, reporting, and admin operations in a single workflow.</p>
+              <div class="tag-row">
+                <span>Laravel</span>
+                <span>SaaS</span>
+                <span>Billing Logic</span>
+                <span>MySQL</span>
+              </div>
+            </article>
+
+            <article class="project-card glass-card reveal">
+              <div class="project-head">
+                <h3>Development Dashboard</h3>
+                <span class="status-badge status-internal">Internal</span>
+              </div>
+              <p>Centralized project visibility, task signals, environment notes, and technical checkpoints for day-to-day engineering execution.</p>
+              <div class="tag-row">
+                <span>JavaScript</span>
+                <span>Dashboard</span>
+                <span>Monitoring</span>
+                <span>Git</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="stack">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Tech Stack</p>
+            <h2>Tools chosen for practical delivery, maintainability, and operational fit.</h2>
+          </div>
+
+          <div class="stack-grid">
+            <article class="stack-card glass-card reveal">
+              <h3>Backend</h3>
+              <div class="tag-row">
+                <span>PHP</span>
+                <span>Laravel</span>
+                <span>CodeIgniter</span>
+                <span>Node.js</span>
+              </div>
+            </article>
+            <article class="stack-card glass-card reveal">
+              <h3>Frontend</h3>
+              <div class="tag-row">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+                <span>Flutter Web</span>
+              </div>
+            </article>
+            <article class="stack-card glass-card reveal">
+              <h3>Data</h3>
+              <div class="tag-row">
+                <span>MySQL</span>
+                <span>MariaDB</span>
+                <span>ETL</span>
+                <span>Data Warehouse</span>
+              </div>
+            </article>
+            <article class="stack-card glass-card reveal">
+              <h3>Infra</h3>
+              <div class="tag-row">
+                <span>Linux</span>
+                <span>Apache</span>
+                <span>Cron</span>
+                <span>Git</span>
+                <span>Server Setup</span>
+              </div>
+            </article>
+            <article class="stack-card glass-card reveal">
+              <h3>AI / API</h3>
+              <div class="tag-row">
+                <span>OpenAI API</span>
+                <span>OpenRouter</span>
+                <span>AI-assisted Development</span>
+                <span>API Integration</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Experience &amp; Work Style</p>
+            <h2>Execution principles for building systems that teams can actually use.</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item glass-card reveal">
+              <span class="timeline-index">00</span>
+              <h3>Corporate website engine renewal</h3>
+              <p>Delivered a Laravel-based corporate website rebuild with a new CMS/admin engine, prioritizing clean modular structure, modern environment compatibility, security improvements, and UI consistency with the previous public-facing design.</p>
+            </article>
+            <article class="timeline-item glass-card reveal">
+              <span class="timeline-index">01</span>
+              <h3>Understand business flow first</h3>
+              <p>Map the real process, dependencies, bottlenecks, and stakeholders before deciding what the system should automate.</p>
+            </article>
+            <article class="timeline-item glass-card reveal">
+              <span class="timeline-index">02</span>
+              <h3>Build maintainable system architecture</h3>
+              <p>Keep the structure clear enough for future iteration, onboarding, debugging, and operational ownership.</p>
+            </article>
+            <article class="timeline-item glass-card reveal">
+              <span class="timeline-index">03</span>
+              <h3>Secure by design</h3>
+              <p>Access control, environment discipline, backup habits, and sensible defaults should exist from the start, not after launch.</p>
+            </article>
+            <article class="timeline-item glass-card reveal">
+              <span class="timeline-index">04</span>
+              <h3>Automate repetitive work</h3>
+              <p>Recurring tasks should be reduced into stable flows so teams spend less time repeating manual steps.</p>
+            </article>
+            <article class="timeline-item glass-card reveal">
+              <span class="timeline-index">05</span>
+              <h3>Document clearly for technical and non-technical teams</h3>
+              <p>Delivery includes handover clarity so the system remains understandable beyond the implementation phase.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-cta" id="contact">
+        <div class="container">
+          <div class="cta-card reveal">
+            <div class="cta-copy">
+              <p class="eyebrow">Contact</p>
+              <h2>Have an operational problem that needs a system?</h2>
+              <p>Romiz Labs can help turn manual processes, scattered data, and repetitive workflows into structured digital systems.</p>
+            </div>
+            <div class="cta-actions">
+              <a class="button button-primary" href="https://github.com/ahmadromiz1" target="_blank" rel="noreferrer">Let&apos;s Connect</a>
+              <div class="contact-mini">
+                <a href="https://github.com/ahmadromiz1" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="#" aria-label="LinkedIn placeholder">LinkedIn</a>
+                <a href="mailto:your-email@example.com">Email</a>
+                <a href="#" aria-label="Instagram placeholder">Instagram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-<footer class="text-center text-light small mt-5 py-4 px-3" style="background-color: #2c2c2c;">
-    <div class="container">
-        <p class="mb-2 opacity-75">
-            ☕ No fancy frameworks, no complex stacks — just <strong>HTML</strong>, <strong>Bootstrap</strong>, and a
-            warm cup of coffee.
-        </p>
-        <p class="mb-2 opacity-75">
-            🎶 Accompanied by songs of the homeland and a sincere desire to tell a story, this humble page was born.
-        </p>
-        <p class="mb-0 opacity-75 fst-italic">
-            ✨ Because sometimes, the best stories don't need luxury. Just heart — and a bit of CSS.
-        </p>
-        <hr class="border-secondary" style="max-width: 200px; margin: 1rem auto;">
-        <p class="mb-0">&copy;Romiz 2025</p>
-    </div>
-</footer>
 
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#home">
+            <span class="brand-mark">RL</span>
+            <span class="brand-text">Romiz Labs</span>
+          </a>
+          <p class="footer-tagline">Practical systems for automation, data, AI, and reliable business operations.</p>
+        </div>
 
+        <div class="footer-links">
+          <a href="https://github.com/ahmadromiz1" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="#" aria-label="LinkedIn placeholder">LinkedIn</a>
+          <a href="mailto:your-email@example.com">Email</a>
+          <a href="#" aria-label="Instagram placeholder">Instagram</a>
+        </div>
+
+        <p class="footer-copy">© <span id="year"></span> Romiz Labs. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init();</script>
-
 </html>
