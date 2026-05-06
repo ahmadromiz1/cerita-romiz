@@ -31,9 +31,7 @@ This repository contains a clean, responsive, dark-mode-first portfolio site bui
 |-- index-en.html
 |-- style.css
 |-- script.js
-|-- assets/
-|-- blog/
-`-- cv/
+    `-- assets/logo/
 ```
 
 ## Features
@@ -69,4 +67,4 @@ This project is designed to run directly on GitHub Pages without backend service
 ## Notes
 
 - Update placeholder social links in `index.html` and `index-en.html` before final publishing if needed.
-- The legacy `assets/`, `blog/`, and `cv/` folders are still present in the repository and can be cleaned up later if they are no longer used.
+- Brand logo assets are stored in `assets/logo/`.

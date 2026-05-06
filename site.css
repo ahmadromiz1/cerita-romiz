@@ -123,6 +123,18 @@ a {
   text-transform: uppercase;
 }
 
+.hub-logo-lockup {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hub-logo {
+  width: min(100%, 240px);
+  height: auto;
+  display: block;
+}
+
 .hub-badge,
 .eyebrow,
 .product-tag,
@@ -308,8 +320,15 @@ span {
   place-items: center;
   border-radius: 1rem;
   background: linear-gradient(135deg, var(--accent), #e4fff0);
-  color: #07131d;
-  font-weight: 800;
+  overflow: hidden;
+  padding: 0.28rem;
+}
+
+.brand-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .brand-copy small {
