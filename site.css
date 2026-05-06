@@ -450,6 +450,17 @@ span {
   margin-top: 4rem;
 }
 
+.site-footer {
+  margin-top: 2.4rem;
+  padding: 1.2rem 0 0.5rem;
+  border-top: 1px solid rgba(157, 191, 225, 0.12);
+}
+
+.site-footer p {
+  color: rgba(166, 184, 202, 0.82);
+  font-size: 0.92rem;
+}
+
 .cta-actions {
   grid-auto-flow: row;
 }
