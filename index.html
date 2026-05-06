@@ -3,445 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Romiz Labs | Portfolio Sistem, Otomasi, Data, dan AI</title>
-  <meta name="description" content="Romiz Labs membangun sistem praktis untuk otomasi, data pipeline, tools berbasis AI, aplikasi web aman, dan operasional bisnis.">
-  <meta name="keywords" content="Romiz Labs, fullstack developer, automation, data pipeline, AI tools, Laravel, DevOps, internal systems, Python">
-  <meta name="author" content="Romiz Labs">
-  <meta name="theme-color" content="#081526">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Romiz Labs | Portfolio Sistem, Otomasi, Data, dan AI">
-  <meta property="og:description" content="Portfolio profesional Romiz Labs yang berfokus pada internal system, workflow automation, integrasi AI, dan solusi web yang siap operasional.">
-  <meta property="og:url" content="https://ahmadromiz1.github.io/cerita-romiz/">
-  <meta property="og:site_name" content="Romiz Labs">
-  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23081526'/%3E%3Ccircle cx='880' cy='150' r='120' fill='%2300c2ff' fill-opacity='0.18'/%3E%3Ccircle cx='210' cy='480' r='180' fill='%232189ff' fill-opacity='0.12'/%3E%3Ctext x='90' y='275' fill='white' font-family='Arial, sans-serif' font-size='82' font-weight='700'%3ERomiz Labs%3C/text%3E%3Ctext x='90' y='360' fill='%2394a8c6' font-family='Arial, sans-serif' font-size='34'%3EBuilding practical systems for automation, data, AI, and operations.%3C/text%3E%3C/svg%3E">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Romiz Labs | Portfolio Sistem, Otomasi, Data, dan AI">
-  <meta name="twitter:description" content="Romiz Labs membangun sistem praktis untuk otomasi, data pipeline, tools berbasis AI, aplikasi web aman, dan operasional bisnis.">
-  <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%23081526'/%3E%3Ccircle cx='880' cy='150' r='120' fill='%2300c2ff' fill-opacity='0.18'/%3E%3Ccircle cx='210' cy='480' r='180' fill='%232189ff' fill-opacity='0.12'/%3E%3Ctext x='90' y='275' fill='white' font-family='Arial, sans-serif' font-size='82' font-weight='700'%3ERomiz Labs%3C/text%3E%3Ctext x='90' y='360' fill='%2394a8c6' font-family='Arial, sans-serif' font-size='34'%3EBuilding practical systems for automation, data, AI, and operations.%3C/text%3E%3C/svg%3E">
-  <link rel="canonical" href="https://ahmadromiz1.github.io/cerita-romiz/">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23081526'/%3E%3Cpath d='M18 46V18h13.8c8.6 0 14.2 5.4 14.2 13.6S40.4 46 31.8 46H18zm8-6h5.2c5 0 8.6-3.2 8.6-8.4s-3.6-8.4-8.6-8.4H26V40z' fill='%2300c2ff'/%3E%3C/svg%3E">
+  <title>Zentro | Link Hub</title>
+  <meta name="description" content="Link hub resmi Zentro untuk operational systems, workflow automation, internal platform, data integration, dan implementation notes.">
+  <meta name="theme-color" content="#09131f">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="site.css">
 </head>
-<body>
-  <div class="site-shell">
-    <header class="navbar-wrapper">
-      <nav class="navbar container">
-        <a class="brand" href="#home" aria-label="Romiz Labs home">
-          <span class="brand-mark">RL</span>
-          <span class="brand-text">Romiz Labs</span>
-        </a>
+<body class="hub-page">
+  <main class="page-shell">
+    <div class="lang-switcher">
+      <a class="lang-link" href="index-en.html">EN</a>
+      <a class="lang-link is-active" href="index.html">ID</a>
+    </div>
 
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Toggle navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <div class="nav-panel" id="site-menu">
-          <ul class="nav-links">
-            <li><a href="#home" class="nav-link active">Beranda</a></li>
-            <li><a href="#expertise" class="nav-link">Keahlian</a></li>
-            <li><a href="#projects" class="nav-link">Proyek</a></li>
-            <li><a href="#stack" class="nav-link">Stack</a></li>
-            <li><a href="#experience" class="nav-link">Pengalaman</a></li>
-            <li><a href="#contact" class="nav-link">Kontak</a></li>
-          </ul>
-          <div class="nav-utilities">
-            <div class="lang-switch" aria-label="Language switcher">
-              <span class="lang-switch-label">Lang</span>
-              <a class="lang-link is-active" href="index.html" aria-current="page">ID</a>
-              <a class="lang-link" href="index-en.html">EN</a>
-            </div>
-            <a class="button button-primary nav-cta" href="#contact">Hubungi Saya</a>
-          </div>
+    <section class="hub-hero">
+      <div class="hub-badge">Zentro</div>
+      <p class="hub-kicker">Operational Systems & Automation</p>
+      <h1>Bangun sistem operasional digital yang lebih rapi, otomatis, dan siap berkembang.</h1>
+      <p class="hub-summary">
+        Zentro membantu bisnis membangun website, workflow automation, internal system, dan integrasi data
+        yang benar-benar dipakai dalam operasional.
+      </p>
+      <div class="hub-stats">
+        <div class="hub-stat">
+          <strong>147+</strong>
+          <span>laporan jurnal terotomasi</span>
         </div>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero section" id="home">
-        <div class="container hero-grid">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">Personal Tech Brand</p>
-            <h1>Membangun Sistem Praktis untuk Otomasi, Data, AI, dan Operasional Bisnis.</h1>
-            <p class="hero-subtitle">
-              Romiz Labs berfokus pada pembuatan internal system, workflow automation, data pipeline, tools berbasis AI, dan aplikasi web aman yang membantu operasional bisnis berjalan lebih cepat, rapi, dan efisien.
-            </p>
-
-            <div class="hero-typing">
-              <span class="typing-label">Fokus utama:</span>
-              <span class="typing-text" id="typing-text">Arsitektur internal system</span>
-            </div>
-
-            <div class="hero-actions">
-              <a class="button button-primary" href="#projects">Lihat Proyek</a>
-              <a class="button button-secondary" href="#contact">Hubungi Saya</a>
-            </div>
-
-            <div class="badge-row">
-              <span class="chip">Fullstack Development</span>
-              <span class="chip">AI &amp; Data</span>
-              <span class="chip">Automation</span>
-              <span class="chip">DevOps &amp; Infra</span>
-            </div>
-          </div>
-
-          <div class="hero-panel reveal">
-            <div class="signal-card">
-              <div class="signal-top">
-                <span class="signal-title">Fokus Desain Operasional</span>
-                <span class="signal-badge">Systems Builder</span>
-              </div>
-              <div class="signal-metrics">
-                <article>
-                  <strong>Internal Systems</strong>
-                  <p>Merancang tools yang mengurangi friksi pada workflow bisnis yang berulang.</p>
-                </article>
-                <article>
-                  <strong>Data &amp; Automation</strong>
-                  <p>Mengubah reporting manual, ETL, dan monitoring menjadi pipeline yang terstruktur.</p>
-                </article>
-                <article>
-                  <strong>Security-Aware Delivery</strong>
-                  <p>Membangun aplikasi web yang maintainable dengan access control dan disiplin backup.</p>
-                </article>
-              </div>
-            </div>
-          </div>
+        <div class="hub-stat">
+          <strong>2 minggu -> 1-2 jam</strong>
+          <span>pengurangan waktu proses reporting</span>
         </div>
-      </section>
-
-      <section class="section" id="about">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Tentang Romiz Labs</p>
-            <h2>Laboratorium teknologi yang fokus pada penyelesaian masalah operasional.</h2>
-            <p>
-              Romiz Labs adalah personal technology lab yang berfokus pada penyelesaian masalah operasional nyata melalui software, data, otomasi, dan solusi yang siap dijalankan secara infrastruktur.
-            </p>
-          </div>
-
-          <div class="about-grid">
-            <article class="glass-card reveal">
-              <h3>Business-first thinking</h3>
-              <p>Setiap sistem dimulai dari memahami bagaimana pekerjaan benar-benar berjalan antar tim, approval, report, dan constraint operasional harian.</p>
-            </article>
-            <article class="glass-card reveal">
-              <h3>Lean technical execution</h3>
-              <p>Tujuannya adalah delivery yang praktis: komponen lebih ringkas, ownership jelas, dan solusi yang berjalan stabil tanpa kompleksitas yang tidak perlu.</p>
-            </article>
-            <article class="glass-card reveal">
-              <h3>Infrastructure-ready mindset</h3>
-              <p>Aplikasi dirancang dengan mempertimbangkan deployment, keamanan database, alur backup, observability, dan maintainability jangka panjang.</p>
-            </article>
-          </div>
+        <div class="hub-stat">
+          <strong>End-to-end</strong>
+          <span>dari discovery sampai deployment</span>
         </div>
-      </section>
-
-      <section class="section" id="expertise">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Keahlian</p>
-            <h2>Kemampuan inti yang dibangun untuk operasional, delivery, dan maintainability.</h2>
-          </div>
-
-          <div class="card-grid expertise-grid">
-            <article class="glass-card reveal">
-              <i class="bi bi-diagram-3"></i>
-              <h3>Internal Business Systems</h3>
-              <p>Dashboard operasional, tracking proses, approval flow, admin panel, dan tools yang mengurangi pekerjaan yang terpecah-pecah.</p>
-            </article>
-            <article class="glass-card reveal">
-              <i class="bi bi-window-stack"></i>
-              <h3>Laravel &amp; Web Application Development</h3>
-              <p>Aplikasi berbasis backend, sistem role-based, integrasi API, dan interface yang maintainable untuk kebutuhan tim bisnis.</p>
-            </article>
-            <article class="glass-card reveal">
-              <i class="bi bi-bezier2"></i>
-              <h3>Data Pipeline &amp; ETL</h3>
-              <p>Alur import terstruktur, logika transformasi, schedule berulang, dukungan warehousing, dan otomasi reporting.</p>
-            </article>
-            <article class="glass-card reveal">
-              <i class="bi bi-cpu"></i>
-              <h3>AI Tools Integration</h3>
-              <p>Workflow berbantuan AI, tooling berbasis prompt, internal copilot, dan otomasi berbasis API untuk pekerjaan knowledge work.</p>
-            </article>
-            <article class="glass-card reveal">
-              <i class="bi bi-database-check"></i>
-              <h3>Database &amp; Backup Operations</h3>
-              <p>Pengelolaan schema, perencanaan backup, rutin konsistensi data, kesiapan restore, dan pengamanan operasional.</p>
-            </article>
-            <article class="glass-card reveal">
-              <i class="bi bi-shield-lock"></i>
-              <h3>DevOps, Server Setup &amp; Security</h3>
-              <p>Deployment flow ringan, setup server Linux, scheduled job, environment management, dan hardening yang sadar aspek keamanan.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="projects">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Project Experience</p>
-            <h2>Pilihan proyek yang selaras dengan kebutuhan operasional dan eksekusi teknis yang jelas.</h2>
-          </div>
-
-          <div class="card-grid project-grid">
-            <article class="project-card glass-card reveal">
-              <div class="project-head">
-                <h3>Corporate Website Replatforming with Laravel CMS Engine</h3>
-                <span class="status-badge status-production">Production Ready</span>
-              </div>
-              <p>Membangun ulang website corporate di atas engine baru berbasis Laravel dan admin CMS dengan fokus pada maintainability, kompatibilitas environment modern, peningkatan keamanan, dan perubahan visual seminimal mungkin dari website existing.</p>
-              <div class="tag-row">
-                <span>Laravel</span>
-                <span>CMS</span>
-                <span>Admin Panel</span>
-                <span>Security</span>
-              </div>
-            </article>
-
-            <article class="project-card glass-card reveal">
-              <div class="project-head">
-                <h3>AI Operational Summary from WhatsApp Backup</h3>
-                <span class="status-badge status-internal">Internal</span>
-              </div>
-              <p>Membangun workflow AI untuk memproses backup percakapan grup WhatsApp operasional, menghasilkan ringkasan harian berisi kejadian penting, insight operasional, dan poin tindak lanjut, lalu mengirimkan resume tersebut kembali ke target WhatsApp secara otomatis.</p>
-              <div class="tag-row">
-                <span>Baileys JS</span>
-                <span>Python</span>
-                <span>AI Summary</span>
-                <span>WhatsApp Automation</span>
-              </div>
-            </article>
-
-            <article class="project-card glass-card reveal">
-              <div class="project-head">
-                <h3>Postflight ETL Automation</h3>
-                <span class="status-badge status-internal">Internal</span>
-              </div>
-              <p>Mengotomasi intake data operasional yang berulang, transformasi, dan cleanup agar reporting lebih cepat dan ketergantungan spreadsheet manual berkurang.</p>
-              <div class="tag-row">
-                <span>PHP</span>
-                <span>MySQL</span>
-                <span>Cron</span>
-                <span>ETL</span>
-              </div>
-            </article>
-
-            <article class="project-card glass-card reveal">
-              <div class="project-head">
-                <h3>Safety Report Data Warehouse Mapping</h3>
-                <span class="status-badge status-prototype">Prototype</span>
-              </div>
-              <p>Memetakan data reporting ke struktur yang siap data warehouse untuk mendukung analisis tren, join yang lebih bersih, dan alur BI berikutnya.</p>
-              <div class="tag-row">
-                <span>MariaDB</span>
-                <span>Data Warehouse</span>
-                <span>SQL</span>
-                <span>Reporting</span>
-              </div>
-            </article>
-
-            <article class="project-card glass-card reveal">
-              <div class="project-head">
-                <h3>Employee QR Verification System</h3>
-                <span class="status-badge status-production">Production Ready</span>
-              </div>
-              <p>Membangun alur verifikasi internal untuk pemeriksaan identitas karyawan dengan logic berbasis scan dan hasil yang ramah audit.</p>
-              <div class="tag-row">
-                <span>Laravel</span>
-                <span>QR Code</span>
-                <span>Auth</span>
-                <span>Admin Panel</span>
-              </div>
-            </article>
-
-            <article class="project-card glass-card reveal">
-              <div class="project-head">
-                <h3>Cooperative / Member Management SaaS</h3>
-                <span class="status-badge status-concept">Concept</span>
-              </div>
-              <p>Merancang sistem anggota modular untuk registrasi, tracking iuran, reporting, dan operasional admin dalam satu alur kerja.</p>
-              <div class="tag-row">
-                <span>Laravel</span>
-                <span>SaaS</span>
-                <span>Billing Logic</span>
-                <span>MySQL</span>
-              </div>
-            </article>
-
-            <article class="project-card glass-card reveal">
-              <div class="project-head">
-                <h3>Development Dashboard</h3>
-                <span class="status-badge status-internal">Internal</span>
-              </div>
-              <p>Memusatkan visibilitas proyek, task signal, catatan environment, dan checkpoint teknis untuk eksekusi engineering harian.</p>
-              <div class="tag-row">
-                <span>JavaScript</span>
-                <span>Dashboard</span>
-                <span>Monitoring</span>
-                <span>Git</span>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="stack">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Tech Stack</p>
-            <h2>Tools yang dipilih untuk delivery yang praktis, maintainable, dan cocok dengan kebutuhan operasional.</h2>
-          </div>
-
-          <div class="stack-grid">
-            <article class="stack-card glass-card reveal">
-              <h3>Backend</h3>
-              <div class="tag-row">
-                <span>PHP</span>
-                <span>Python</span>
-                <span>Laravel</span>
-                <span>CodeIgniter</span>
-                <span>Node.js</span>
-              </div>
-            </article>
-            <article class="stack-card glass-card reveal">
-              <h3>Frontend</h3>
-              <div class="tag-row">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Bootstrap</span>
-                <span>Flutter Web</span>
-              </div>
-            </article>
-            <article class="stack-card glass-card reveal">
-              <h3>Data</h3>
-              <div class="tag-row">
-                <span>MySQL</span>
-                <span>MariaDB</span>
-                <span>Python</span>
-                <span>ETL</span>
-                <span>Data Warehouse</span>
-              </div>
-            </article>
-            <article class="stack-card glass-card reveal">
-              <h3>Infra</h3>
-              <div class="tag-row">
-                <span>Linux</span>
-                <span>Apache</span>
-                <span>Cron</span>
-                <span>Git</span>
-                <span>Server Setup</span>
-              </div>
-            </article>
-            <article class="stack-card glass-card reveal">
-              <h3>AI / API</h3>
-              <div class="tag-row">
-                <span>OpenAI API</span>
-                <span>OpenRouter</span>
-                <span>AI-assisted Development</span>
-                <span>Python Automation</span>
-                <span>API Integration</span>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="experience">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Pengalaman &amp; Gaya Kerja</p>
-            <h2>Prinsip eksekusi untuk membangun sistem yang benar-benar bisa dipakai tim.</h2>
-          </div>
-
-          <div class="timeline">
-            <article class="timeline-item glass-card reveal">
-              <span class="timeline-index">00</span>
-              <h3>Pembaruan engine website corporate</h3>
-              <p>Mengerjakan rebuild website corporate berbasis Laravel dengan engine CMS/admin baru, dengan prioritas struktur modular yang rapi, kompatibilitas environment modern, peningkatan keamanan, dan konsistensi UI dengan desain publik sebelumnya.</p>
-            </article>
-            <article class="timeline-item glass-card reveal">
-              <span class="timeline-index">00A</span>
-              <h3>AI summary untuk grup operasional</h3>
-              <p>Membangun alur backup percakapan WhatsApp grup operasional menjadi ringkasan AI harian yang menyorot kejadian utama, insight, dan tindak lanjut, lalu mendistribusikan hasilnya kembali ke channel target. Implementasi menggunakan Baileys JS dengan dukungan Python untuk sebagian alur pemrosesan.</p>
-            </article>
-            <article class="timeline-item glass-card reveal">
-              <span class="timeline-index">01</span>
-              <h3>Pahami alur bisnis terlebih dahulu</h3>
-              <p>Petakan proses nyata, dependency, bottleneck, dan stakeholder sebelum memutuskan apa yang harus diotomasi oleh sistem.</p>
-            </article>
-            <article class="timeline-item glass-card reveal">
-              <span class="timeline-index">02</span>
-              <h3>Bangun arsitektur sistem yang maintainable</h3>
-              <p>Jaga struktur tetap jelas untuk iterasi berikutnya, onboarding, debugging, dan ownership operasional.</p>
-            </article>
-            <article class="timeline-item glass-card reveal">
-              <span class="timeline-index">03</span>
-              <h3>Secure by design</h3>
-              <p>Access control, disiplin environment, kebiasaan backup, dan default yang aman harus hadir sejak awal, bukan setelah launch.</p>
-            </article>
-            <article class="timeline-item glass-card reveal">
-              <span class="timeline-index">04</span>
-              <h3>Otomasi pekerjaan yang repetitif</h3>
-              <p>Tugas yang berulang harus diubah menjadi flow yang stabil agar tim tidak terus menghabiskan waktu pada langkah manual.</p>
-            </article>
-            <article class="timeline-item glass-card reveal">
-              <span class="timeline-index">05</span>
-              <h3>Dokumentasikan dengan jelas untuk tim teknis dan non-teknis</h3>
-              <p>Delivery mencakup kejelasan handover agar sistem tetap mudah dipahami setelah fase implementasi selesai.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-cta" id="contact">
-        <div class="container">
-          <div class="cta-card reveal">
-            <div class="cta-copy">
-              <p class="eyebrow">Kontak</p>
-              <h2>Punya masalah operasional yang butuh sistem?</h2>
-              <p>Romiz Labs dapat membantu mengubah proses manual, data yang tersebar, dan workflow repetitif menjadi sistem digital yang terstruktur.</p>
-            </div>
-            <div class="cta-actions">
-              <a class="button button-primary" href="mailto:ahmadromiz01@gmail.com">Mari Terhubung</a>
-              <div class="contact-mini">
-                <a href="https://www.linkedin.com/in/ahmadromiz" target="_blank" rel="noreferrer">LinkedIn</a>
-                <a href="mailto:ahmadromiz01@gmail.com">Email</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container footer-grid">
-        <div>
-          <a class="brand footer-brand" href="#home">
-            <span class="brand-mark">RL</span>
-            <span class="brand-text">Romiz Labs</span>
-          </a>
-          <p class="footer-tagline">Sistem praktis untuk otomasi, data, AI, dan operasional bisnis yang andal.</p>
-        </div>
-
-        <div class="footer-links">
-          <a href="https://www.linkedin.com/in/ahmadromiz" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="mailto:ahmadromiz01@gmail.com">Email</a>
-        </div>
-
-        <p class="footer-copy">© <span id="year"></span> Romiz Labs. All rights reserved.</p>
       </div>
-    </footer>
-  </div>
+    </section>
 
-  <script src="script.js"></script>
+    <section class="hub-links">
+      <a class="hub-link primary" href="jual.html">
+        <span class="hub-link-copy">
+          <strong>Lihat Solusi Zentro</strong>
+          <small>Operational digital infrastructure untuk kebutuhan perusahaan</small>
+        </span>
+        <span class="hub-link-arrow">01</span>
+      </a>
+
+      <a class="hub-link" href="cerita.html">
+        <span class="hub-link-copy">
+          <strong>Implementation Notes</strong>
+          <small>Background, pengalaman, dan pendekatan engineering</small>
+        </span>
+        <span class="hub-link-arrow">02</span>
+      </a>
+
+      <a class="hub-link" href="https://wa.me/6285742864832?text=Halo%20Zentro,%20saya%20ingin%20konsultasi%20tentang%20website%20atau%20sistem%20bisnis." target="_blank" rel="noreferrer">
+        <span class="hub-link-copy">
+          <strong>Konsultasi via WhatsApp</strong>
+          <small>Diskusi kebutuhan tanpa komitmen awal</small>
+        </span>
+        <span class="hub-link-arrow">03</span>
+      </a>
+    </section>
+
+    <section class="hub-proof">
+      <article class="proof-card">
+        <h2>Fokus utama</h2>
+        <ul>
+          <li>Corporate CMS dan web platform</li>
+          <li>Workflow automation dan backend operational system</li>
+          <li>Data integration, monitoring, dan reporting</li>
+          <li>Internal platform sesuai kebutuhan organisasi</li>
+        </ul>
+      </article>
+
+      <article class="proof-card accent">
+        <h2>Positioning</h2>
+        <p>
+          Fokus utama Zentro bukan hanya tampilan website, tetapi membangun sistem digital yang benar-benar
+          digunakan dalam operasional bisnis melalui automation, workflow, dan platform internal yang lebih rapi.
+        </p>
+      </article>
+    </section>
+
+    <section class="hub-proof">
+      <article class="proof-card accent">
+        <h2>Featured Implementation</h2>
+        <p>
+          Financial Journal Automation membantu proses rekonsiliasi jurnal berbasis Excel untuk kebutuhan finance operasional,
+          memangkas pekerjaan manual dari sekitar dua minggu menjadi sekitar satu hingga dua jam.
+        </p>
+        <ul>
+          <li>147+ report agent diproses otomatis</li>
+          <li>Auto mapping dan balancing validation</li>
+          <li>Output jurnal siap dipakai tim finance</li>
+        </ul>
+      </article>
+
+      <article class="proof-card">
+        <h2>Engineering Capability</h2>
+        <ul>
+          <li>CMS dan backend architecture</li>
+          <li>API integration dan ETL pipeline</li>
+          <li>Workflow automation dan monitoring</li>
+          <li>Internal business platform dan role system</li>
+        </ul>
+      </article>
+
+      <article class="proof-card">
+        <h2>How We Work</h2>
+        <ul>
+          <li>Discovery untuk memahami operasional dan kebutuhan bisnis</li>
+          <li>Solution mapping untuk struktur sistem dan automation</li>
+          <li>Development untuk build dan integrasi</li>
+          <li>Deployment, handover, dan support lanjutan</li>
+        </ul>
+      </article>
+    </section>
+  </main>
 </body>
 </html>
