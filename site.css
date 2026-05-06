@@ -285,6 +285,11 @@ span {
   padding-left: 1.1rem;
 }
 
+.footer-inline-link {
+  color: var(--accent);
+  font-weight: 700;
+}
+
 .proof-card.accent,
 .accent-panel,
 .pricing-card.featured {
@@ -417,6 +422,20 @@ span {
 .metric-card,
 .pricing-card {
   min-height: 100%;
+}
+
+.flagship-case {
+  margin-bottom: 1.2rem;
+}
+
+.case-grid {
+  margin-top: 1rem;
+}
+
+.case-grid strong {
+  display: block;
+  color: var(--text);
+  margin-bottom: 0.5rem;
 }
 
 .pricing-card h3 {
