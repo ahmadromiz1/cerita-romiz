@@ -1,70 +1,33 @@
-# Romiz Labs
+# Cerita Romiz
 
-Professional personal portfolio and landing page for `Romiz Labs`, built as a static website for GitHub Pages.
+Bilingual personal portfolio for Ahmad Romiz, Backend, Automation & Data Engineer. Published on GitHub Pages at https://ahmadromiz1.github.io/cerita-romiz/.
 
-## Overview
+## Pages
 
-Romiz Labs is a personal tech brand focused on:
+- `index.html` / `index-id.html`: Indonesian portfolio.
+- `index-en.html`: English portfolio.
+- `cerita.html` / `cerita-en.html`: existing implementation notes.
+- `jual.html` / `jual-en.html`: existing Zentro solutions.
 
-- internal business systems
-- automation workflows
-- data pipelines and ETL
-- AI-powered tools
-- secure web applications
-- lightweight DevOps and infrastructure setup
+## Portfolio files
 
-This repository contains a clean, responsive, dark-mode-first portfolio site built with plain HTML, CSS, and JavaScript.
+- `portfolio.css`: responsive light theme, indigo accents, project flows, reduced motion support.
+- `portfolio-data.js`: bilingual project descriptions and verified public repository links. Edit project content here and update static card copy in all three home pages when changing summaries, tags, or titles.
+- `portfolio.js`: category and technology filters, native project dialog, dynamic year.
+- `assets/romiz-profile.jpg`: profile image from Ahmad Romiz's public GitHub avatar.
 
-## Stack
+Each project opens a detail dialog with its challenge, solution, feature coverage, outcome, and repository or implementation-note link. Native `<dialog>` provides keyboard focus containment and Escape dismissal. Dialogs also close via the close button or backdrop and return focus to the project button. Cards and navigation remain readable without JavaScript; a noscript link points to implementation notes.
 
-- HTML
-- CSS
-- JavaScript
-- Google Fonts
-- Bootstrap Icons via CDN
+The finance demo uses synthetic data. Report count and turnaround metrics describe the existing published operational case study, not demo benchmark results. Internal project descriptions use only previously published implementation notes.
 
-## Project Structure
+## Run locally
 
-```text
-.
-|-- index.html
-|-- index-en.html
-|-- style.css
-|-- script.js
-    `-- assets/logo/
+No installation or build required:
+
+```sh
+python3 -m http.server 8000
 ```
 
-## Features
+Open http://localhost:8000. GitHub Pages publishes the root of the `main` branch. Asset URLs are relative to support the `/cerita-romiz/` base path.
 
-- responsive landing page for desktop, tablet, and mobile
-- dark corporate-tech visual direction
-- smooth scroll navigation
-- mobile menu toggle
-- active navigation state on scroll
-- reveal-on-scroll animation
-- dynamic copyright year
-- basic SEO metadata and Open Graph tags
-
-## Local Usage
-
-No build step is required.
-
-1. Clone the repository.
-2. Open `index.html` directly in a browser, or serve the folder with any static file server.
-
-Example using Python:
-
-```bash
-python -m http.server 8000
-```
-
-Then open `http://localhost:8000`.
-
-## Deployment
-
-This project is designed to run directly on GitHub Pages without backend services or build tooling.
-
-## Notes
-
-- Update placeholder social links in `index.html` and `index-en.html` before final publishing if needed.
-- Brand logo assets are stored in `assets/logo/`.
+Design reference: https://sylvaan.github.io/ — light portfolio layout, selected work, technology filters, and project details adapted to Romiz's own content.
